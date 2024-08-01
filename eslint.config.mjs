@@ -12,6 +12,11 @@ export default [
     plugins: {
       react: pluginReact,
     },
+    settings: {
+      react: {
+        version: "detect",
+      },
+    },
     rules: {
       ...pluginReact.configs.recommended.rules,
       "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
