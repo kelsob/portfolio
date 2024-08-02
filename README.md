@@ -5,6 +5,7 @@ Welcome to my portfolio website! This project showcases my skills and projects a
 ## Technologies Used
 
 - **Front-End**:
+
   - React
   - HTML, CSS, JavaScript
   - Tailwind CSS
@@ -12,6 +13,7 @@ Welcome to my portfolio website! This project showcases my skills and projects a
   - Alpine.js (if used, otherwise remove)
 
 - **Back-End**:
+
   - PHP
   - Laravel (if included in any parts, otherwise remove)
   - Node.js (if used, otherwise remove)
@@ -37,3 +39,4 @@ To run this project locally, follow these steps:
    ```bash
    git clone https://github.com/yourusername/portfolio.git
    cd portfolio
+   ```
