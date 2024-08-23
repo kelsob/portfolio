@@ -16,24 +16,66 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed top-0 w-full p-4 z-10">
+    <nav
+      className={`fixed top-0 w-full p-2 z-10 border-b-4 transition-colors duration-300 ${
+        isDarkMode
+          ? 'bg-darkColor border-mainColor'
+          : 'bg-mainColor border-lightColor'
+      }`}
+      style={{ 
+        boxShadow: isDarkMode 
+          ? '0 4px 10px rgba(0, 0, 0, 0.15)'   // Darker shadow in dark mode
+          : '0 4px 10px rgba(0, 0, 0, 0.15)'   // Lighter shadow in light mode
+      }}
+    >
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         <ul className="flex space-x-6">
-          <li><a href="#home" className="hover:text-gray-400">Home</a></li>
-          <li><a href="#about" className="hover:text-gray-400">About</a></li>
-          <li><a href="#portfolio" className="hover:text-gray-400">Portfolio</a></li>
-          <li><a href="#contact" className="hover:text-gray-400">Contact</a></li>
+          <li>
+            <a
+              href="#home"
+              className="font-bold hover:text-superLightColor hover:underline"
+            >
+              Home
+            </a>
+          </li>
+          <li>
+            <a
+              href="#about"
+              className="font-bold hover:text-superLightColor hover:underline"
+            >
+              About
+            </a>
+          </li>
+          <li>
+            <a
+              href="#portfolio"
+              className="font-bold hover:text-superLightColor hover:underline"
+            >
+              Portfolio
+            </a>
+          </li>
+          <li>
+            <a
+              href="#contact"
+              className="font-bold hover:text-superLightColor hover:underline"
+            >
+              Contact
+            </a>
+          </li>
         </ul>
-        <div 
-          onClick={toggleDarkMode} 
+        <div
+          onClick={toggleDarkMode}
           className={`w-14 h-8 flex items-center rounded-full p-1 cursor-pointer transition-colors duration-300 ${
-            isDarkMode ? 'bg-gray-800' : 'bg-gray-300'
+            isDarkMode ? 'bg-lightColor' : 'bg-lightColor'
           }`}
+          style={{ userSelect: 'none' }}
         >
-          <div 
-            className={`${
-              isDarkMode ? 'translate-x-6 bg-gray-700' : 'translate-x-0 bg-white'
-            } w-6 h-6 rounded-full shadow-md transform transition-transform duration-300 flex items-center justify-center`}
+          <div
+            className={`w-6 h-6 rounded-full shadow-md transform transition-transform duration-300 flex items-center justify-center ${
+              isDarkMode
+                ? 'translate-x-6 bg-darkColor text-white'
+                : 'translate-x-0 bg-superLightColor text-darkColor'
+            }`}
           >
             {isDarkMode ? '🌙' : '☀️'}
           </div>

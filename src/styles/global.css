@@ -37,17 +37,18 @@ section {
   flex: 1 0 100%;
   height: 100vh;
   scroll-snap-align: start; /* Ensures sections snap into place */
+  color: #02badb; /* Universal font color for page content */
+  background-color: #f9fafb;
 }
 
 /* Section-specific background colors for light mode */
 body {
-  background-color: #f9fafb; /* Light gray background */
+  background-color: #ffffff; /* Light gray background */
   color: #1f2937; /* Dark gray text */
 }
 
 nav {
-  background-color: #ffffff; /* White navbar */
-  color: #1f2937; /* Dark gray text */
+  color: #ffffff; /* Dark gray text */
 }
 
 footer {
@@ -70,22 +71,6 @@ button:hover {
   color: #e0f2fe; /* Light blue text on hover */
 }
 
-/* Section-specific background colors */
-section#home {
-  background-color: #f9fafb;
-}
-
-section#about {
-  background-color: #e5e7eb;
-}
-
-section#portfolio {
-  background-color: #cbd5e1;
-}
-
-section#contact {
-  background-color: #94a3b8;
-}
 
 /* Dark mode specific styles */
 .dark body {
@@ -94,7 +79,6 @@ section#contact {
 }
 
 .dark nav {
-  background-color: #2d3748; /* Darker navbar */
   color: #f9fafb; /* Light gray text */
 }
 
@@ -113,19 +97,7 @@ section#contact {
   color: #e0f2fe; /* Light blue text on hover */
 }
 
-/* Dark mode section-specific background colors */
-.dark section#home {
-  background-color: #1f2937;
-}
-
-.dark section#about {
-  background-color: #2d3748;
-}
-
-.dark section#portfolio {
-  background-color: #4a5568;
-}
-
-.dark section#contact {
-  background-color: #5a67d8;
+.dark section {
+  background-color:   #006e81;
+  color: #ffffff; /* Universal font color for page content */
 }
