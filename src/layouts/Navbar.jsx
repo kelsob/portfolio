@@ -32,7 +32,7 @@ const Navbar = () => {
         <ul className="flex space-x-6 items-center">
           <li>
             <div
-              className={`font-bold text-2xl rounded-xl flex items-center justify-center pl-2 pr-2 pb-1 transition-colors duration-300 ${
+              className={`font-bold text-2xl rounded-xl flex items-center justify-center pl-2 pr-2 transition-colors duration-300 ${
                 isDarkMode
                   ? 'text-white bg-mainColor'
                   : 'text-mainColor bg-white'
