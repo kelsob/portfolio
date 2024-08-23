@@ -17,7 +17,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed top-0 w-full p-2 z-10 border-b-4 transition-colors duration-300 ${
+      className={`fixed top-0 w-full p-2 z-10 border-b-4 pl-8 pr-8 transition-colors duration-300 ${
         isDarkMode
           ? 'bg-darkColor border-mainColor'
           : 'bg-mainColor border-lightColor'
@@ -29,11 +29,24 @@ const Navbar = () => {
       }}
     >
       <div className="max-w-7xl mx-auto flex justify-between items-center">
-        <ul className="flex space-x-6">
+        <ul className="flex space-x-6 items-center">
+          <li>
+            <div
+              className={`font-bold text-2xl rounded-xl flex items-center justify-center pl-2 pr-2 pb-1 transition-colors duration-300 ${
+                isDarkMode
+                  ? 'text-white bg-mainColor'
+                  : 'text-mainColor bg-white'
+              }`}
+              style={{ userSelect: 'none' }}
+            >
+              Ben Kelso
+            </div>
+          </li>
+
           <li>
             <a
               href="#home"
-              className="font-bold hover:text-superLightColor hover:underline"
+              className="font-bold hover:text-superLightColor hover:underline pl-2"
             >
               Home
             </a>
