@@ -1,31 +1,13 @@
 import Navbar from './layouts/Navbar';
-import Home from './pages/Home';
-import About from './pages/About';
-import Portfolio from './pages/Portfolio';
-import Contact from './pages/Contact';
-import Footer from './layouts/Footer';
+import MainContent from './pages/MainContent';
 
-function App() {
+const App = () => {
   return (
-    <div className="app-container">
+    <div className="flex flex-col min-h-screen">
       <Navbar />
-      <div className="sections-wrapper">
-        <section id="home">
-          <Home />
-        </section>
-        <section id="about">
-          <About />
-        </section>
-        <section id="portfolio">
-          <Portfolio />
-        </section>
-        <section id="contact">
-          <Contact />
-        </section>
-      </div>
-      <Footer />
+      <MainContent />
     </div>
   );
-}
+};
 
 export default App;
