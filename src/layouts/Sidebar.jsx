@@ -26,7 +26,7 @@ const Sidebar = () => {
   }, []);
 
   return (
-    <aside className="w-1/4 bg-gradient-to-b from-lightColor to-superLightColor flex items-center justify-center fixed top-12 min-h-screen border-r-4">
+    <aside className="w-1/4 bg-gradient-to-b from-lightColor to-superLightColor flex items-start justify-end pr-4 pt-24 fixed top-12 min-h-screen border-r-4">
       <div className="shadow-xl rounded-lg border-y-4 border-x-2 border-Color">
         <nav className="relative space-y-4 text-right bg-mainColor p-8 rounded-lg">
           <div className="pr-5 border-r-4 border-lightColor rounded-lg relative">

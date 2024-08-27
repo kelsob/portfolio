@@ -43,12 +43,13 @@ const Contact = () => {
           <div className="mt-8 text-center">
             <p>You can also reach me at:</p>
             <a
-              href="mailto:youremail@example.com"
+              href="mailto:kelsob@gmail.com"
               className="hover:underline"
             >
-              youremail@example.com
+              kelsob@gmail.com
             </a>
           </div>
+          <h1 className="text-5xl font-bold mb-2 mt-4 text-start">&lt;/Ben Kelso&gt;</h1>
         </div>
       </div>
     );

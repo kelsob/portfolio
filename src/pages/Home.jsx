@@ -1,15 +1,17 @@
 const Home = () => {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center p-6 bg-gradient-to-b from-white to-gray-200">
+    <div className="min-h-screen flex flex-col justify-center p-6 bg-gradient-to-b from-white to-gray-200">
       {/* Introduction Section */}
-      <h1 className="text-5xl font-bold mb-4">Ben Kelso</h1>
-      <h2 className="text-2xl mb-8">Web Developer & Designer</h2>
-      <p className="text-lg max-w-3xl text-center mb-12">
-        I am a web developer specializing in creating responsive, user-friendly websites. With a strong foundation in modern web technologies, I focus on delivering high-quality digital experiences that are both accessible and efficient.
-      </p>
+      <div className="w-full max-w-4xl mx-auto">
+        <h1 className="text-5xl font-bold mb-2 text-left">&lt;Ben Kelso&gt;</h1>
+        <h2 className="text-2xl mb-2 text-left">Web Developer & Designer</h2>
+        <p className="text-lg text-left mb-6">
+          I am a web developer specializing in creating responsive, user-friendly websites. With a strong foundation in modern web technologies, I focus on delivering high-quality digital experiences that are both accessible and efficient.
+        </p>
+      </div>
 
       {/* Technologies Section */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-4xl mx-auto">
         {/* Example Technology Entry */}
         <div className="flex items-center space-x-4 p-4 bg-white border border-gray-200 rounded-lg shadow-md transition duration-300 hover:shadow-[inset_0_0_0_2px_var(--tw-shadow-color)] hover:shadow-mainColor">
           <img src="src/assets/react-icon.svg" alt="React" className="w-12 h-12" />
