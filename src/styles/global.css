@@ -3,7 +3,6 @@
 @tailwind utilities;
 
 
-
 * {
   user-select: none;
 }
@@ -21,6 +20,10 @@ html, body {
   padding: 0;
   overflow-x: hidden;
   scroll-behavior: smooth;
+}
+
+span {
+  font-size: 14px;
 }
 
 /* Container for the entire app */
