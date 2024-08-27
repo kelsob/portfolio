@@ -2,6 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
+* {
+  user-select: none;
+}
+
+/* Apply global font settings */
+html {
+  font-family: 'DM sans', sans-serif;
+}
+
+
+
 /* Reset margins and paddings, ensure smooth scrolling */
 html, body {
   margin: 0;
