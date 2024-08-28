@@ -30,7 +30,7 @@ const Navbar = () => {
         {/* Left Side - Name and Title */}
         <div className="flex items-center space-x-4">
           <div
-            className={`font-bold text-2xl rounded-xl flex items-center justify-center pl-2 pr-2 transition-colors duration-300 border-2 border-lightColor ${
+            className={`w-min whitespace-nowrap font-bold text-2xl rounded-xl flex items-center justify-center pl-2 pr-2 transition-colors duration-300 border-2 border-lightColor ${
               isDarkMode
                 ? 'text-white bg-mainColor'
                 : 'text-mainColor bg-white'
@@ -39,7 +39,7 @@ const Navbar = () => {
           >
             Ben Kelso
           </div>
-          <div className="text-white">
+          <div className="text-white whitespace-nowrap">
             Web Developer
           </div>
         </div>
@@ -47,7 +47,7 @@ const Navbar = () => {
         {/* Right Side - External Links */}
         <div className="flex space-x-4 items-center">
 
-          <div className="flex">
+          <div className="hidden md:flex">
             <a href="https://github.com/kelsob" target="_blank" rel="noopener noreferrer" className="mr-2">
               <img src="src/assets/github-icon.svg" alt="GitHub" className="w-6 h-6" />
             </a>
@@ -55,7 +55,7 @@ const Navbar = () => {
               github.com/kelsob
             </a>
           </div>
-          <div className="flex">
+          <div className="hidden md:flex">
             <a href="https://www.google.com/maps/place/Guelph,+ON/@43.5344065,-80.3181062,13z/data=!3m1!4b1!4m6!3m5!1s0x882b9ad0c3a9fb6b:0x5037b28c7231b60!8m2!3d43.5448048!4d-80.2481666!16zL20vMDE4ZGN5?entry=ttu&g_ep=EgoyMDI0MDgyMS4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" className="mr-1">
               <img src="src/assets/location-icon.svg" alt="Location" className="w-6 h-6" />
             </a>

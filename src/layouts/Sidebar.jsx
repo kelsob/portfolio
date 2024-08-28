@@ -26,10 +26,10 @@ const Sidebar = () => {
   }, []);
 
   return (
-    <aside className="w-1/4 bg-gradient-to-b from-lightColor to-superLightColor flex items-start justify-end pr-4 pt-24 fixed top-12 min-h-screen border-r-4">
-      <div className="shadow-xl rounded-lg border-y-4 border-x-2 border-Color">
-        <nav className="relative space-y-4 text-right bg-mainColor p-8 rounded-lg">
-          <div className="pr-5 border-r-4 border-lightColor rounded-lg relative">
+    <aside className="w-1/4 bg-gradient-to-b from-lightColor to-superLightColor flex items-center justify-end pr-4 fixed min-h-screen border-r-4">
+      <div className="transition-all duration-500 ease-in-out shadow-xl rounded-lg border-y-4 border-x-2 border-Color md:translate-x-0 translate-x-4">
+        <nav className="transition-all duration-500 ease-in-out relative space-y-4 text-right bg-mainColor rounded-lg py-8 pl-8 pr-0 md:px-8">
+          <div className="transition-colors pr-5 border-r-4 border-mainColor md:border-lightColor rounded-lg relative">
             <a
               href="#home"
               className={`block font-semibold ${activeSection === 'home' ? 'text-white hover:text-superLightColor' : 'text-superLightColor hover:text-white'}`}
@@ -51,7 +51,7 @@ const Sidebar = () => {
 
             {/* The animated dot */}
             <div
-              className={`absolute -translate-x-2 right-0 h-1.5 w-1.5 bg-white rounded-full transform transition-transform duration-300 ease-in-out ${
+              className={`absolute -translate-x-2 right-0 h-2 w-2 bg-white border-2 border-lightColor rounded-full transform transition-transform duration-300 ease-in-out ${
                 activeSection === 'home' ? '-translate-y-4' :
                 activeSection === 'portfolio' ? 'translate-y-2' :
                 'translate-y-8'
