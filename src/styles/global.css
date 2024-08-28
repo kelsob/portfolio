@@ -54,7 +54,6 @@ section {
   height: 100vh;
   scroll-snap-align: start; /* Ensures sections snap into place */
   color: #02badb; /* Universal font color for page content */
-  background-color: #f9fafb;
 }
 
 /* Section-specific background colors for light mode */

@@ -65,13 +65,13 @@ const Navbar = () => {
           </div>
           <div
             onClick={toggleDarkMode}
-            className={`w-14 h-8 flex items-center rounded-full p-1 cursor-pointer transition-colors duration-300 ${
+            className={`w-14 h-8 flex items-center rounded-full p-1 cursor-pointer transition-colors duration-300 border-2 border-superLightColor dark:border-mainColor ${
               isDarkMode ? 'bg-lightColor' : 'bg-lightColor'
             }`}
             style={{ userSelect: 'none' }}
           >
             <div
-              className={`w-6 h-6 rounded-full shadow-md transform transition-transform duration-300 flex items-center justify-center ${
+              className={`w-6 h-6 rounded-full shadow-md transform transition-transform duration-300 flex items-center border-2 border-lightColor justify-center ${
                 isDarkMode
                   ? 'translate-x-6 bg-darkColor text-white'
                   : 'translate-x-0 bg-superLightColor text-darkColor'
