@@ -26,40 +26,84 @@ const Sidebar = () => {
   }, []);
 
   return (
-    <aside className="w-1/4 bg-gradient-to-b from-mainColor to-superLightColor dark:from-darkColor dark:to-lightColor flex items-center justify-end pr-4 fixed min-h-screen border-r-4 border-lightColor dark:border-superDarkColor">
-      <div className="transition-all duration-500 ease-in-out shadow-xl rounded-lg border-y-4 border-x-2 border-lightColor dark:border-mainColor md:translate-x-0 translate-x-2">
-        <nav className="transition-all duration-500 ease-in-out relative space-y-4 text-right bg-mainColor dark:bg-darkColor rounded-lg py-8 pl-8 pr-0 md:px-8">
-          <div className="transition-colors pr-6 border-mainColor relative">
-            <a
-              href="#home"
-              className={`block font-semibold ${activeSection === 'home' ? 'text-white dark:text-superLightColor' : 'text-superLightColor hover:text-white dark:text-lightColor dark:hover:text-white'}`}
-            >
-              Home
-            </a>
-            <a
-              href="#portfolio"
-              className={`block font-semibold ${activeSection === 'portfolio' ? 'text-white dark:text-superLightColor' : 'text-superLightColor hover:text-white dark:text-lightColor dark:hover:text-white'}`}
-            >
-              Portfolio
-            </a>
-            <a
-              href="#contact"
-              className={`block font-semibold ${activeSection === 'contact' ? 'text-white dark:text-superLightColor' : 'text-superLightColor hover:text-white dark:text-lightColor dark:hover:text-white'}`}
-            >
-              Contact
-            </a>
+    <aside className="fixed w-1/4 min-h-screen border-r-4 border-mainColor dark:border-superDarkColor">
+      {/* Background Layer */}
+      <div className="absolute inset-0">
+        {/* Light mode background */}
+        <div
+          className="absolute inset-0 transition-opacity duration-500 opacity-100 dark:opacity-0"
+          style={{
+            backgroundImage: 'url(src/assets/sidebar-bg-light.png)',
+            backgroundPosition: 'right center',
+            backgroundSize: 'auto 100%',
+            backgroundRepeat: 'no-repeat',
+          }}
+        ></div>
 
-            {/* The animated dot */}
-            <div
-              className={`absolute -translate-x-2 right-0 h-2 w-2 bg-white dark:bg-superLightColor rounded-full transform transition-transform duration-300 ease-in-out ${
-                activeSection === 'home' ? '-translate-y-4' :
-                activeSection === 'portfolio' ? 'translate-y-2' :
-                'translate-y-8'
-              }`}
-              style={{ top: 'calc(1.25rem + 4px)' }} /* Adjust this based on spacing */
-            ></div>
-          </div>
-        </nav>
+        {/* Dark mode background */}
+        <div
+          className="absolute inset-0 transition-opacity duration-500 dark:opacity-100 opacity-0"
+          style={{
+            backgroundImage: 'url(src/assets/sidebar-bg-dark.png)',
+            backgroundPosition: 'right center',
+            backgroundSize: 'auto 100%',
+            backgroundRepeat: 'no-repeat',
+          }}
+        ></div>
+      </div>
+
+      {/* Content Layer */}
+      <div className="relative z-10 flex flex-col items-end justify-center pr-4 min-h-screen drop-shadow-lg overflow-y-auto">
+        <div className="">
+          <nav className="space-y-4 text-right rounded-lg p-4 bg-gray-400 bg-opacity-30">
+            <div className="relative pr-6 border-mainColor">
+              <a
+                href="#home"
+                className={`block font-semibold drop-shadow-md ${
+                  activeSection === 'home'
+                    ? 'text-white dark:text-superLightColor'
+                    : 'text-lightColor hover:text-superLightColor dark:text-lightColor dark:hover:text-white'
+                }`}
+              >
+                Home
+              </a>
+              <a
+                href="#portfolio"
+                className={`block font-semibold drop-shadow-md ${
+                  activeSection === 'portfolio'
+                    ? 'text-white dark:text-superLightColor'
+                    : 'text-lightColor hover:text-superLightColor dark:text-lightColor dark:hover:text-white'
+                }`}
+              >
+                Portfolio
+              </a>
+              <a
+                href="#contact"
+                className={`block font-semibold drop-shadow-md ${
+                  activeSection === 'contact'
+                    ? 'text-white dark:text-superLightColor'
+                    : 'text-lightColor hover:text-superLightColor dark:text-lightColor dark:hover:text-white'
+                }`}
+              >
+                Contact
+              </a>
+
+              {/* The animated dot */}
+              <div
+                className={`absolute -translate-x-3 right-0 h-1.5 w-1.5 bg-mainColor border-2 border-darkColor dark:bg-superLightColor rounded-full transform transition-transform duration-300 ease-in-out ${
+                  activeSection === 'home'
+                    ? '-translate-y-4'
+                    : activeSection === 'portfolio'
+                    ? 'translate-y-2'
+                    : activeSection === 'contact'
+                    ? 'translate-y-8'
+                    : 'translate-y-8'
+                }`}
+                style={{ top: 'calc(1.25rem + 4px)' }} /* Adjust this based on spacing */
+              ></div>
+            </div>
+          </nav>
+        </div>
       </div>
     </aside>
   );
