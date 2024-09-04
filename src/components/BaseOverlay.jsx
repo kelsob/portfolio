@@ -37,14 +37,16 @@ export function BaseOverlay({ isOpen, onClose, children }) {
               {children}
             </div>
           </div>
-          <div>
+          <div className="pt-2">
             <button
-              className="relative text-2xl font-bold text-gray-700 dark:text-gray-200"
+              className="relative text-2xl text-white dark:text-white border-2 px-1 border-white rounded-lg transition-colors duration-300 hover:text-red-500 hover:border-red-500 hover:font-black dark:hover:text-red-400 hover:scale-110"
               onClick={onClose}
+              aria-label="Close"
             >
-              X
+              &#10005;
             </button>
           </div>
+
 
         </div>
       )}

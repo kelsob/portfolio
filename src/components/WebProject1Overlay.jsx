@@ -10,19 +10,26 @@ import video4 from '../assets/friendfarm/clips/rainrun.mp4';
 export function WebProject1Overlay({ isOpen, onClose }) {
   return (
     <BaseOverlay isOpen={isOpen} onClose={onClose}>
-      <h2 className="text-xl font-bold mb-6">Game Project 1 (WIP)</h2>
+      <h2 className="text-xl font-bold mb-4">Game Project 1 (WIP)</h2>
 
 
       {/* Project Description */}
-      <p className="text-sm text-left mb-8">
-        This is an in-progress game project focused on building a pixel art-based 2D adventure. 
-        The goal is to combine beautiful pixel art with dynamic gameplay, providing players with 
-        an engaging and immersive experience.
+      <p className="text-sm text-left mb-2">
+        <strong>Friend Farm</strong> – In-progress video game project built in the Godot engine:
       </p>
+      <ul className="list-disc pl-6 text-left mb-4 space-y-2 text-sm">
+        <li><strong>Nostalgic Pixel Art Style</strong>: Evoking a classic feel with modern design sensibilities.</li>
+        <li><strong>Engaging Farming Mechanics</strong>: Easy to pick up, but with deep systems for players seeking mastery.</li>
+        <li><strong>Dynamic Weather System</strong>: 16 unique weather states that impact crop growth and world conditions.</li>
+        <li><strong>Complex NPC Behavior</strong>: NPCs have daily routines, moving around the world with advanced pathfinding and schedules.</li>
+        <li><strong>Rich Variety</strong>: Includes a wide range of items, crops, and characters to interact with.</li>
+        <li><strong>Immersive World</strong>: Weather, NPCs, and gameplay elements combine to create a living, breathing environment.</li>
+      </ul>
+
 
       {/* Technologies Used */}
-      <h3 className="text-lg font-semibold mb-4">Technologies Used</h3>
-      <div className="flex items-center space-x-6 mb-8">
+      <h3 className="text-lg font-semibold mb-2">Technologies Used</h3>
+      <div className="flex items-center space-x-6 mb-4">
         <div className="flex flex-col items-center">
           <img src={godotLogo} alt="Godot" className="w-12 h-12" />
           <span className="text-sm mt-2">Godot</span>
