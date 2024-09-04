@@ -17,42 +17,42 @@ const Home = () => {
       {/* Technologies Section */}
       <div className="technology-section">
         <div className="technology-card">
-          <img src="src/assets/react-icon.svg" alt="React" />
+          <img src="src/assets/techicons/react-icon.svg" alt="React" />
           <span>React - A powerful JavaScript library for building user interfaces.</span>
         </div>
 
         <div className="technology-card">
-          <img src="src/assets/tailwind-icon.svg" alt="Tailwind CSS" />
+          <img src="src/assets/techicons/tailwind-icon.svg" alt="Tailwind CSS" />
           <span>Tailwind CSS - A utility-first CSS framework for rapid UI development.</span>
         </div>
 
         <div className="technology-card">
-          <img src="src/assets/nodejs-icon.svg" alt="Node.js" />
+          <img src="src/assets/techicons/nodejs-icon.svg" alt="Node.js" />
           <span>Node.js - JavaScript runtime for building scalable server-side applications.</span>
         </div>
 
         <div className="technology-card">
-          <img src="src/assets/laravel-icon.svg" alt="PHP Laravel" />
+          <img src="src/assets/techicons/laravel-icon.svg" alt="PHP Laravel" />
           <span>PHP Laravel - A robust PHP framework for building modern web applications.</span>
         </div>
 
         <div className="technology-card">
-          <img src="src/assets/bootstrap-icon.svg" alt="Bootstrap" />
+          <img src="src/assets/techicons/bootstrap-icon.svg" alt="Bootstrap" />
           <span>Bootstrap - A popular CSS framework for responsive web design.</span>
         </div>
 
         <div className="technology-card">
-          <img src="src/assets/html-5-icon.svg" alt="HTML, CSS, JavaScript" />
+          <img src="src/assets/techicons/html-5-icon.svg" alt="HTML, CSS, JavaScript" />
           <span>HTML, CSS, JavaScript - The foundational technologies for building modern websites.</span>
         </div>
 
         <div className="technology-card">
-          <img src="src/assets/django-icon.svg" alt="Django" />
+          <img src="src/assets/techicons/django-icon.svg" alt="Django" />
           <span>Django - A high-level Python framework for developing secure and scalable web applications.</span>
         </div>
 
         <div className="technology-card">
-          <img src="src/assets/typescript-icon.svg" alt="TypeScript" />
+          <img src="src/assets/techicons/typescript-icon.svg" alt="TypeScript" />
           <span>TypeScript - A typed superset of JavaScript that enhances code quality.</span>
         </div>
       </div>

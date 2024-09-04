@@ -33,7 +33,7 @@ const Sidebar = () => {
         <div
           className="absolute inset-0 transition-opacity duration-500 opacity-100 dark:opacity-0"
           style={{
-            backgroundImage: 'url(src/assets/sidebar-bg-light.png)',
+            backgroundImage: 'url(src/assets/bgimages/sidebar-bg-light.png)',
             backgroundPosition: 'right center',
             backgroundSize: 'auto 100%',
             backgroundRepeat: 'no-repeat',
@@ -44,7 +44,7 @@ const Sidebar = () => {
         <div
           className="absolute inset-0 transition-opacity duration-500 dark:opacity-100 opacity-0"
           style={{
-            backgroundImage: 'url(src/assets/sidebar-bg-dark.png)',
+            backgroundImage: 'url(src/assets/bgimages/sidebar-bg-dark.png)',
             backgroundPosition: 'right center',
             backgroundSize: 'auto 100%',
             backgroundRepeat: 'no-repeat',

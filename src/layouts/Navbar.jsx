@@ -49,7 +49,7 @@ const Navbar = () => {
 
           <div className="hidden md:flex">
             <a href="https://github.com/kelsob" target="_blank" rel="noopener noreferrer" className="mr-2">
-              <img src="src/assets/github-icon.svg" alt="GitHub" className="w-6 h-6" />
+              <img src="src/assets/techicons/github-icon.svg" alt="GitHub" className="w-6 h-6" />
             </a>
             <a href="https://github.com/kelsob" target="_blank" rel="noopener noreferrer" className="mr-1 text-white">
               github.com/kelsob
@@ -57,7 +57,7 @@ const Navbar = () => {
           </div>
           <div className="hidden md:flex">
             <a href="https://www.google.com/maps/place/Guelph,+ON/@43.5344065,-80.3181062,13z/data=!3m1!4b1!4m6!3m5!1s0x882b9ad0c3a9fb6b:0x5037b28c7231b60!8m2!3d43.5448048!4d-80.2481666!16zL20vMDE4ZGN5?entry=ttu&g_ep=EgoyMDI0MDgyMS4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" className="mr-1">
-              <img src="src/assets/location-icon.svg" alt="Location" className="w-6 h-6" />
+              <img src="src/assets/techicons/location-icon.svg" alt="Location" className="w-6 h-6" />
             </a>
             <a href="https://www.google.com/maps/place/Guelph,+ON/@43.5344065,-80.3181062,13z/data=!3m1!4b1!4m6!3m5!1s0x882b9ad0c3a9fb6b:0x5037b28c7231b60!8m2!3d43.5448048!4d-80.2481666!16zL20vMDE4ZGN5?entry=ttu&g_ep=EgoyMDI0MDgyMS4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" className="mr-1 text-white">
               Guelph, ON
