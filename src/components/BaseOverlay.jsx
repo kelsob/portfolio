@@ -20,17 +20,16 @@ export function BaseOverlay({ isOpen, onClose, children }) {
   return (
     <>
       {isOpen && (
-        <div className="fixed inset-0 z-50 flex items-start space-x-4 justify-center p-4">
+        <div className="fixed inset-0 z-50 flex items-start space-x-4 justify-center p-4 transition-opacity duration-300 ease-out">
           {/* Overlay Background */}
           <div
-            className="absolute inset-0 bg-black bg-opacity-50"
+            className="absolute inset-0 bg-black bg-opacity-50 transition-opacity duration-300"
             onClick={onClose}
           ></div>
 
 
           {/* Overlay Container */}
-          <div className="relative bg-white dark:bg-gray-800 rounded-lg shadow-lg max-h-[95vh] w-full max-w-4xl overflow-y-auto p-6">
-
+          <div className="relative bg-white dark:bg-gray-800 rounded-lg shadow-lg max-h-[95vh] w-full max-w-4xl overflow-y-auto p-6 transform transition-transform duration-300 scale-95 opacity-0 fade-in-out-animation">
 
             {/* Overlay Content */}
             <div className="flex flex-col items-start">

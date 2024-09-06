@@ -20,52 +20,20 @@ const Portfolio = () => {
 
         {/* Web Development Projects */}
         <h2 className="text-2xl font-semibold mb-4 text-left">Web Development</h2>
-        <div className="space-y-6">
-          <div 
-            className="flex flex-col sm:flex-row items-center bg-white border border-gray-200 rounded-lg shadow-md p-4 transition-transform duration-300 hover:shadow-lg cursor-pointer"
-            onClick={() => openOverlay('web1')}  // Open Web Project 1 Overlay
-          >
-            <img src="path_to_web_project1_image.jpg" alt="Web Project 1" className="w-full sm:w-1/3 h-40 object-cover rounded-lg sm:mr-4 mb-4 sm:mb-0" />
-            <div className="flex flex-col justify-center text-left">
-              <h3 className="text-2xl font-bold mb-2">Web Project 1</h3>
-              <p className="text-lg">Description of Web Project 1.</p>
-            </div>
-          </div>
 
-          <div 
-            className="flex flex-col sm:flex-row items-center bg-white border border-gray-200 rounded-lg shadow-md p-4 transition-transform duration-300 hover:shadow-lg cursor-pointer"
-            onClick={() => openOverlay('web1')}  // Open Web Project 2 Overlay
-          >
-            <img src="path_to_web_project2_image.jpg" alt="Web Project 2" className="w-full sm:w-1/3 h-40 object-cover rounded-lg sm:mr-4 mb-4 sm:mb-0" />
-            <div className="flex flex-col justify-center text-left">
-              <h3 className="text-2xl font-bold mb-2">Web Project 2</h3>
-              <p className="text-lg">Description of Web Project 2.</p>
-            </div>
-          </div>
-        </div>
 
         {/* Game Development Projects */}
         <h2 className="text-2xl font-semibold mb-4 mt-12 text-left">Game Development</h2>
         <div className="space-y-6">
           <div 
-            className="flex flex-col sm:flex-row items-center bg-white border border-gray-200 rounded-lg shadow-md p-4 transition-transform duration-300 hover:shadow-lg cursor-pointer"
+            className="group flex flex-col sm:flex-row items-center bg-gray-100 dark:bg-gray-800 dark:hover:border-superLightColor dark:border-lightColor hover:bg-gray-200 border-2 hover:border-darkColor border-superLightColor rounded-lg shadow-md p-4 transition-colors duration-300 hover:shadow-xl cursor-pointer"
             onClick={() => openOverlay('web1')}  // Open Game Project 1 Overlay
           >
-            <img src="../src/assets/friendfarm/images/FriendFarmTitleScreen.png" alt="Friend Farm" className="w-full sm:w-1/3 h-40 object-cover rounded-lg sm:mr-4 mb-4 sm:mb-0 flex-shrink-0" />
+            <img src="../src/assets/friendfarm/images/FriendFarmTitleScreen.png" alt="Friend Farm" className=" sm:w-1/3 h-auto max-w-full object-center border-2 border-superLightColor rounded-sm sm:mr-4 mb-4 sm:mb-0 flex-shrink-0 shadow-lg" />
             <div className="flex flex-col justify-center text-left">
-              <h3 className="text-2xl font-bold mb-2">Friend Farm</h3>
-              <p className="text-lg">  Friend Farm is an in-progress pixel art-based 2D adventure built in the Godot engine. It features engaging farming mechanics, dynamic weather systems, and NPCs with complex behavior and daily routines, and features beautiful pixel art.</p>
-            </div>
-          </div>
-
-          <div 
-            className="flex flex-col sm:flex-row items-center bg-white border border-gray-200 rounded-lg shadow-md p-4 transition-transform duration-300 hover:shadow-lg cursor-pointer"
-            onClick={() => openOverlay('web1')}  // Open Game Project 2 Overlay
-          >
-            <img src="path_to_game_project2_image.jpg" alt="Game Project 2" className="w-full sm:w-1/3 h-40 object-cover rounded-lg sm:mr-4 mb-4 sm:mb-0" />
-            <div className="flex flex-col justify-center text-left">
-              <h3 className="text-2xl font-bold mb-2">Game Project 2</h3>
-              <p className="text-lg">Description of Game Project 2.</p>
+              <h3 className="text-md font-bold mb-2 dark:text-superLightColor group-hover:text-darkColor dark:group-hover:text-white transition-colors drop-shadow-lg">Friend Farm</h3>
+              <p className="text-xs dark:text-superLightColor group-hover:text-darkColor dark:group-hover:text-white transition-colors">  Friend Farm is an in-progress 2D adventure built in the Godot engine, showcasing beautiful pixel art, engaging farming mechanics, dynamic weather systems, and NPCs with complex daily routines and behaviors.</p>
+              <p className="text-xs dark:text-superLightColor scale-75 italic text-right group-hover:text-darkColor dark:group-hover:text-white transition-colors">  Click for more details.</p>
             </div>
           </div>
         </div>
