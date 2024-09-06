@@ -53,7 +53,7 @@ const Sidebar = () => {
       </div>
 
       {/* Content Layer */}
-      <div className="relative z-10 flex flex-col items-end justify-center pr-4 min-h-screen drop-shadow-lg overflow-y-auto">
+      <div className="relative z-10 flex flex-col items-end justify-start pt-20 pr-4 min-h-screen drop-shadow-lg overflow-y-auto">
         <div className="">
           <nav className="space-y-4 text-right rounded-lg p-4 bg-gray-400 bg-opacity-30">
             <div className="relative pr-6 border-mainColor">
