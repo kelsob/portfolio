@@ -1,6 +1,6 @@
 const Home = () => {
   return (
-    <div className="min-h-screen flex flex-col space-y-2 justify-center p-6">
+    <div className="min-h-auto flex flex-col space-y-2 justify-center p-6">
       {/* Introduction Section */}
       <div className="w-full max-w-4xl mx-auto">
         <h1 className="text-5xl font-bold mb-2 text-left transition-all duration-500 ease-in-out">
@@ -9,12 +9,13 @@ const Home = () => {
         <h2 className="text-2xl mb-2 text-left transition-all duration-500 ease-in-out">
           Web Developer & Designer
         </h2>
-        <p className="text-lg text-left mb-6 transition-all duration-500 ease-in-out">
+        <p className="text-lg text-left transition-all duration-500 ease-in-out">
           I am a web developer specializing in creating responsive, user-friendly websites. With a strong foundation in modern web technologies, I focus on delivering high-quality digital experiences that are both accessible and efficient.
         </p>
       </div>
 
       {/* Technologies Section */}
+      <h3>Experienced with:</h3>
       <div className="technology-section">
         <div className="technology-card">
           <img src="src/assets/techicons/react-icon.svg" alt="React" />
