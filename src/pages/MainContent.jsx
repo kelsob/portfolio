@@ -11,7 +11,7 @@ const MainContent = () => {
       {/* Left Navigation Area */}
       <Sidebar />
       {/* Right Content Area */}
-      <div className="w-3/4 bg-white ml-auto mt-12">
+      <div className="w-3/4 bg-white dark:bg-gray-700 transition-colors duration-300 ml-auto mt-12">
         <div className="flex flex-col text-center w-full space-y-auto">
           <section id="home" className="pt-16 -mt-16">
             <Home />

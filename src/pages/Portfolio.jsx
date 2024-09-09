@@ -13,7 +13,7 @@ const Portfolio = () => {
   };
 
   return (
-    <div className="min-h-auto flex flex-col justify-center p-6 pt-4">
+    <div className="min-h-auto flex flex-col justify-center p-6 pt-4 mt-12">
       <div className="w-full max-w-4xl mx-auto">
         {/* Portfolio Header */}
         <h1 className="text-4xl font-bold mb-4 text-center">Portfolio</h1>

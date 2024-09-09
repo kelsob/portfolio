@@ -1,20 +1,19 @@
+/* Tailwind Base, Components, and Utilities */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
+/* Global Styles */
 * {
   user-select: none;
 }
 
-/* Apply global font settings */
+/* Global font settings */
 html {
   font-family: 'DM sans', sans-serif;
 }
 
-
-
-/* Reset margins and paddings, ensure smooth scrolling */
+/* Reset and ensure smooth scrolling */
 html, body {
   margin: 0;
   padding: 0;
@@ -22,141 +21,139 @@ html, body {
   scroll-behavior: smooth;
 }
 
+/* Generic Text Styling */
 span {
   font-size: 14px;
 }
 
-/* Container for the entire app */
+/* App-wide container */
 .app-container {
   display: flex;
   flex-direction: column;
   height: 100vh;
   width: 100%;
-  overflow-x: hidden; /* Prevents horizontal overflow */
+  overflow-x: hidden; /* Prevents horizontal scroll */
 }
 
-/* Wrapper for horizontal scrolling sections */
-/* Assuming four sections, adjust if you have more or fewer */
+/* Horizontal scrolling section wrapper */
 .sections-wrapper {
-    display: flex;
-    height: 100vh;
-    width: 100%; /* Adjust this value based on the number of sections */
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-    scroll-snap-stop: always; /* Ensure snapping stops fully */
-    overflow-x: scroll;
-  }
-  
+  display: flex;
+  height: 100vh;
+  width: 100%; /* Adjust as needed for section count */
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scroll-snap-stop: always;
+  overflow-x: scroll;
+}
 
-/* Each section takes up full viewport height and width */
+/* Individual section layout and style */
 section {
   flex: 1 0 100%;
   height: 100vh;
-  scroll-snap-align: start; /* Ensures sections snap into place */
-  color: #02badb; /* Universal font color for page content */
+  scroll-snap-align: start;
+  color: #02badb; /* Universal text color */
 }
 
-/* Section-specific background colors for light mode */
+/* Light Mode Styles */
 body {
-  background-color: #ffffff; /* Light gray background */
-  color: #1f2937; /* Dark gray text */
+  background-color: #ffffff; /* Light mode background */
+  color: #1f2937; /* Text color for light mode */
 }
 
 nav {
-  color: #ffffff; /* Dark gray text */
+  color: #ffffff; /* Navigation text in light mode */
 }
 
 footer {
-  background-color: #e5e7eb; /* Light gray footer */
-  color: #1f2937; /* Dark gray text */
+  background-color: #e5e7eb; /* Light mode footer background */
+  color: #1f2937; /* Footer text color */
 }
 
-
-/* Dark mode specific styles */
+/* Dark Mode Styles */
 .dark body {
-  background-color: #1a202c; /* Dark gray background */
-  color: #f9fafb; /* Light gray text */
+  background-color: #1a202c; /* Dark mode background */
+  color: #f9fafb; /* Light text for dark mode */
 }
 
 .dark nav {
-  color: #f9fafb; /* Light gray text */
+  color: #f9fafb; /* Light navigation text in dark mode */
 }
 
 .dark footer {
-  background-color: #2d3748; /* Dark gray footer */
-  color: #f9fafb; /* Light gray text */
+  background-color: #2d3748; /* Dark mode footer background */
+  color: #f9fafb; /* Footer text in dark mode */
 }
 
 .dark section {
-  background-color:   #2d3748;
-  color: #ffffff; /* Universal font color for page content */
+  color: #ffffff; /* Universal text color in dark mode */
 }
-/* global.css */
 
-/* Technology Section */
+/* Technology Section Layout */
 .technology-section {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1rem;
-  max-width: 64rem; /* Equivalent to max-w-4xl in Tailwind */
+  max-width: 64rem; /* Max width for large screens */
   margin: 0 auto;
 }
 
-@media (min-width: 768px) { /* Equivalent to md in Tailwind */
+/* Responsive grid for larger screens */
+@media (min-width: 768px) { 
   .technology-section {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr); /* Two-column layout */
   }
 }
 
-/* Technology Card */
+/* Technology Card Styling */
 .technology-card {
   display: flex;
   align-items: center;
   padding: 1rem;
   background-color: #bee9ee;
-  border: 1px solid #02badb; /* Equivalent to border-gray-200 in Tailwind */
+  border: 1px solid #02badb; /* Border color */
   border-radius: 0.5rem;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow */
   transition: all 0.5s ease-in-out;
 }
 
-/* Dark Mode for Technology Card */
+/* Dark Mode for Technology Cards */
 .dark .technology-card {
-  background-color: #006e81; /* Equivalent to bg-gray-800 in Tailwind */
-  border-color: #4a5568; /* Equivalent to border-gray-700 in Tailwind */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  background-color: #006e81;
+  border-color: #4a5568;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Darker shadow */
 }
 
+/* Technology Card Image Styling */
 .technology-card img {
-  width: 3rem; /* Equivalent to w-12 in Tailwind */
-  height: 3rem; /* Equivalent to h-12 in Tailwind */
+  width: 3rem; /* Width and height for card images */
+  height: 3rem;
 }
 
+/* Spacing and text for technology card */
 .technology-card span {
-  margin-left: 1rem; /* Equivalent to space-x-4 in Tailwind */
+  margin-left: 1rem;
   color: #006e81; /* Default text color in light mode */
   text-align: start;
 }
 
-/* Dark Mode for Technology Card Text */
+/* Dark mode text color for technology card */
 .dark .technology-card span {
-  color: #e2e8f0; /* Equivalent to text-gray-300 in Tailwind */
+  color: #e2e8f0; /* Lighter text in dark mode */
 }
 
-/* Hover Effects */
+/* Hover effects for technology card */
 .technology-card:hover {
   border-color: #333;
   box-shadow: inset 0 0 0 2px #02badb, 0 4px 12px rgba(0, 0, 255, 0.15);
 }
 
-/* Dark Mode Hover Effects */
+/* Hover effects in dark mode */
 .dark .technology-card:hover {
-  border-color: #a0aec0; /* Equivalent to border-gray-500 in Tailwind */
+  border-color: #a0aec0; /* Lighter border in dark mode */
   box-shadow: inset 0 0 0 2px #a0aec0, 0 4px 12px rgba(255, 255, 255, 0.1);
 }
 
-
-/* Add these styles to your global CSS or component-specific CSS */
+/* Overlay for modals or popups */
 .overlay {
   position: fixed;
   top: 0;
@@ -169,15 +166,17 @@ footer {
   z-index: 50;
 }
 
+/* Dark overlay background */
 .overlay_background {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5); /* semi-transparent background */
+  background: rgba(0, 0, 0, 0.5);
 }
 
+/* Modal container */
 .overlay_container {
   position: relative;
   background: white;
@@ -188,6 +187,7 @@ footer {
   overflow-y: auto;
 }
 
+/* Close button for modal */
 .overlay_close {
   position: absolute;
   top: 10px;
@@ -198,14 +198,12 @@ footer {
   cursor: pointer;
 }
 
-
-
-
-
+/* Animation for fade-in effect */
 .fade-in-out-animation {
   animation: fadeIn 0.3s ease-out forwards;
 }
 
+/* Keyframe for fade-in animation */
 @keyframes fadeIn {
   0% {
     opacity: 0;
