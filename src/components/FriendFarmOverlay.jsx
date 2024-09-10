@@ -9,7 +9,7 @@ import video3 from '../assets/friendfarm/clips/itempickups.mp4';
 import video4 from '../assets/friendfarm/clips/rainrun.mp4';
 
 
-export function WebProject1Overlay({ isOpen, onClose }) {
+export function FriendFarmOverlay({ isOpen, onClose }) {
   return (
     <BaseOverlay isOpen={isOpen} onClose={onClose}>
       <h2 className="text-xl font-bold ">Friend Farm</h2>
