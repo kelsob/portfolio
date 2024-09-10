@@ -61,7 +61,7 @@ export function StocksOverlay({ isOpen, onClose }) {
       <div className="space-y-4">
         {/* Image 1 */}
         <div className="flex flex-col sm:flex-row sm:space-x-4 items-start mb-6">
-          <img src={image1} alt="Screenshot 1" className="w-full sm:w-2/3 rounded-lg shadow-md mb-4 sm:mb-0" />
+          <img src={image1} alt="Screenshot 1" className="w-full sm:w-2/3 rounded-lg shadow-md mb-4 sm:mb-0 border border-mainColor" />
           <div className="sm:w-1/3 text-left border border-superLightColor rounded p-2">
             <span className="text-lg font-bold block mb-2">1.</span>
             <p className="text-sm">
@@ -72,7 +72,7 @@ export function StocksOverlay({ isOpen, onClose }) {
 
         {/* Image 2 */}
         <div className="flex flex-col sm:flex-row sm:space-x-4 items-start mb-6">
-          <img src={image2} alt="Screenshot 2" className="w-full sm:w-2/3 rounded-lg shadow-md mb-4 sm:mb-0" />
+          <img src={image2} alt="Screenshot 2" className="w-full sm:w-2/3 rounded-lg shadow-md mb-4 sm:mb-0 border border-mainColor" />
           <div className="sm:w-1/3 text-left border border-superLightColor rounded p-2">
             <span className="text-lg font-bold block mb-2">2.</span>
             <p className="text-sm">
@@ -83,7 +83,7 @@ export function StocksOverlay({ isOpen, onClose }) {
 
         {/* Image 3 */}
         <div className="flex flex-col sm:flex-row sm:space-x-4 items-start mb-6">
-          <img src={image3} alt="Screenshot 3" className="w-full sm:w-2/3 rounded-lg shadow-md mb-4 sm:mb-0" />
+          <img src={image3} alt="Screenshot 3" className="w-full sm:w-2/3 rounded-lg shadow-md mb-4 sm:mb-0 border border-mainColor" />
           <div className="sm:w-1/3 text-left border border-superLightColor rounded p-2">
             <span className="text-lg font-bold block mb-2">3.</span>
             <p className="text-sm">
@@ -94,7 +94,7 @@ export function StocksOverlay({ isOpen, onClose }) {
 
         {/* Image 4 */}
         <div className="flex flex-col sm:flex-row sm:space-x-4 items-start mb-6">
-          <img src={image4} alt="Screenshot 4" className="w-full sm:w-2/3 rounded-lg shadow-md mb-4 sm:mb-0" />
+          <img src={image4} alt="Screenshot 4" className="w-full sm:w-2/3 rounded-lg shadow-md mb-4 sm:mb-0 border border-mainColor" />
           <div className="sm:w-1/3 text-left border border-superLightColor rounded p-2">
             <span className="text-lg font-bold block mb-2">4.</span>
             <p className="text-sm">
