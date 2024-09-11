@@ -26,7 +26,7 @@ const Sidebar = () => {
   }, []);
 
   return (
-    <aside className="fixed w-1/4 min-h-screen border-r-4 border-mainColor dark:border-superDarkColor">
+    <aside className="fixed w-1/4 min-h-screen border-r-4 z-10 border-mainColor dark:border-superDarkColor">
       {/* Background Layer */}
       <div className="absolute inset-0">
         {/* Light mode background */}

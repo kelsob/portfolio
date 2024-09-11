@@ -17,7 +17,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed top-0 w-full p-2 z-10 border-b-4 pl-8 pr-8 transition-colors duration-300 rounded-br-2xl ${
+      className={`fixed top-0 w-full p-2 border-b-4 pl-8 pr-8 transition-colors duration-300 rounded-br-2xl z-20 ${
         isDarkMode
           ? 'bg-darkColor border-mainColor text-white'
           : 'bg-mainColor border-lightColor text-black'

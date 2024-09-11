@@ -1,6 +1,6 @@
 const Home = () => {
   return (
-    <div className="min-h-auto flex flex-col space-y-2 justify-center p-6">
+    <div className="min-h-auto flex flex-col space-y-2 justify-center p-6 z-10">
       {/* Introduction Section */}
       <div className="w-full max-w-4xl mx-auto">
         <h1 className="text-5xl font-bold mb-2 text-left transition-all duration-500 ease-in-out">
