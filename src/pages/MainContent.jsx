@@ -2,7 +2,7 @@ import Sidebar from '../layouts/Sidebar';
 import Home from './Home';
 import Portfolio from './Portfolio';
 import Contact from './Contact';
-import { SidebarParticles } from '../components/particles/SidebarParticles';
+import { MainBackgroundParticles } from '../components/particles/MainBackgroundParticles';
 
 const MainContent = () => {
   return (
@@ -14,7 +14,7 @@ const MainContent = () => {
         
         {/* Particles Background */}
         <div className="absolute inset-0 z-0">
-          <SidebarParticles />
+          <MainBackgroundParticles />
         </div>
 
         {/* Main Content */}

@@ -2,7 +2,7 @@ import { useEffect, useState, useMemo } from 'react';
 import Particles, { initParticlesEngine } from '@tsparticles/react';
 import { loadSlim } from '@tsparticles/slim'; // Using slim for performance
 
-export const SidebarParticles = () => {
+export const MainBackgroundParticles = () => {
   const [init, setInit] = useState(false);
 
   // Initialize particles engine
