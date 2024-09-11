@@ -1,6 +1,7 @@
 import { useEffect, useState, useMemo } from 'react';
 import Particles, { initParticlesEngine } from '@tsparticles/react';
-import { loadSlim } from '@tsparticles/slim'; // Using slim for performance
+import { loadAll } from "@tsparticles/all";
+import benkelsoIcon from '../../assets/techicons/benkelso-icon3.svg';
 
 export const MainBackgroundParticles = () => {
   const [init, setInit] = useState(false);
@@ -8,8 +9,7 @@ export const MainBackgroundParticles = () => {
   // Initialize particles engine
   useEffect(() => {
     initParticlesEngine(async (engine) => {
-      // Load only the slim version of the engine for performance
-      await loadSlim(engine);
+      await loadAll(engine);
     }).then(() => {
       setInit(true); // Set init to true once engine is ready
     });
@@ -19,90 +19,114 @@ export const MainBackgroundParticles = () => {
     console.log(container); // Callback when particles are loaded
   };
 
-  const options = useMemo(
-    () => ({
-      background: {
-        color: {
-          value: '#000000', // Background color (can be changed or set to transparent)
-        },
+  const options = useMemo(() => ({
+    background: {
+      color: {
+        value: "#000e66" // Background color, you can change or set to transparent if desired
       },
-      fpsLimit: 120, // Max FPS for the particles rendering
-      interactivity: {
-        events: {
-          onClick: {
-            enable: true, // Allows clicking to interact with particles
-            mode: 'push', // Push mode on click
-          },
-          onHover: {
-            enable: true, // Hover effect for particles
-            mode: 'repulse', // Repulse particles on hover
-          },
+      position: "0% 0%",
+      repeat: "no-repeat",
+      size: "cover",
+      opacity: 1
+    },
+    fpsLimit: 120,
+    interactivity: {
+      detectsOn: "window",
+      events: {
+        onClick: {
+          enable: true,
+          mode: "push"
         },
-        modes: {
-          push: {
-            quantity: 4, // Number of particles to add on click
-          },
-          repulse: {
-            distance: 128, // Distance for repulsion on hover
-            duration: 0.6, // Duration of the hover effect
-          },
-        },
+        onHover: {
+          enable: true,
+          mode: "bubble",
+        }
       },
-      particles: {
-        color: {
-          value: '#ffffff', // Color of particles
+      modes: {
+        push: {
+          quantity: 4,
         },
-        links: {
-          color: '#ffffff', // Links between particles
-          distance: 150, // Max distance for particle links
-          enable: true, // Enable linking particles
-          opacity: 0.5,
-          width: 1,
+        bubble: {
+          distance: 40,
+          duration: 2,
+          size: 6,
+          opacity: 8
         },
-        move: {
-          enable: true, // Enable movement
-          speed: 1, // Speed of particle movement
-          direction: 'none',
-          outModes: {
-            default: 'bounce', // Bounce particles when hitting edge
-          },
-          random: false,
-          straight: true,
-        },
-        number: {
-          density: {
-            enable: true, // Enable density-based particle number
-            area: 800, // Area size for density calculation
-          },
-          value: 240, // Number of particles
-        },
-        opacity: {
-          value: 0.25, // Particle opacity
-        },
-        shape: {
-          type: 'circle', // Shape of particles
-        },
-        size: {
-          value: { min: 1, max: 5 }, // Size of particles
-        },
-      },
-      detectRetina: true, // Enable retina detection
-    }),
-    [] // No dependencies, runs only once
-  );
+      }
+    },
 
-  // Render particles only after initialization
+    particles: {
+      number: {
+        value: 1600,
+        density: {
+          enable: true,
+          area: 800,
+        }
+      },
+      color: {
+        value: ["#4285f4", "#34A853", "#FBBC05", "#EA4335"], // Google-themed colors
+      },
+      shape: {
+        type: "circle",
+      },
+      opacity: {
+        value: { min: 0.05, max: 0.4 },
+        animation: {
+          enable: true,
+          speed: 2,
+          sync: false
+        }
+      },
+      size: {
+        value: 1,
+      },
+      move: {
+        enable: true,
+        speed: 1,
+        direction: "none",
+        outModes: {
+          default: "bounce",
+        }
+      },
+      links: {
+        enable: true,
+        distance: 16,
+        color: "#ffffff",
+        opacity: 0.5,
+        width: 1,
+      }
+    },
+    polygon: {
+      enable: true,
+      inline: {
+        arrangement: "equidistant", // Arrange particles evenly along the shape
+      },
+      move: {
+        radius: 6,
+        type: "path"
+      },
+      scale: 1.25,
+      type: "inline",
+      // Use the local SVG file you imported
+      url: benkelsoIcon,
+      position: {
+        x: 0, // Adjust position to center
+        y: 0
+      }
+    },
+    detectRetina: true,
+  }), []);
+
   if (init) {
     return (
       <Particles
         id="tsparticles"
-        particlesLoaded={particlesLoaded} // Optional callback
-        options={options} // Particle options
-        className="z-0" // Confine the particles to the sidebar
-
+        particlesLoaded={particlesLoaded} // Callback when particles are loaded
+        options={options} // Particles options
+        className="z-0" // Assign z-index to ensure particles are behind content
       />
     );
   }
 
-  return null; // Don't render anything before initialization
+  return null; // Render nothing until initialization is complete
 };
