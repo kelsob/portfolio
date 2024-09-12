@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import sidebarBgLight from '../../src/assets/bgimages/sidebar-bg-light.png';
 import sidebarBgDark from '../../src/assets/bgimages/sidebar-bg-dark.png';
+import { PolygonMaskParticles } from '../components/particles/PolygonMaskParticles';
+
 
 const Sidebar = () => {
   const [activeSection, setActiveSection] = useState('home');
@@ -53,6 +55,11 @@ const Sidebar = () => {
           }}
         ></div>
       </div>
+      <div className="absolute inset-0 z-0" style={{ width: '0%', height: '5%', position: 'relative' }}>
+        <PolygonMaskParticles />
+      </div>
+
+
 
       {/* Content Layer */}
       <div className="relative z-10 flex flex-col items-end justify-start pt-20 pr-4 min-h-screen drop-shadow-lg overflow-y-auto">
