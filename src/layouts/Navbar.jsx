@@ -1,4 +1,6 @@
 import { useState, useEffect } from 'react';
+import githubIcon from '../../src/assets/techicons/github-icon.svg';
+import locationIcon from '../../src/assets/techicons/location-icon.svg';
 
 const Navbar = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -49,7 +51,7 @@ const Navbar = () => {
           {/* GitHub Icon and Text */}
           <div className="flex items-center">
             <a href="https://github.com/kelsob" target="_blank" rel="noopener noreferrer" className="mr-2">
-              <img src="src/assets/techicons/github-icon.svg" alt="GitHub" className="w-6 h-6" />
+              <img src={githubIcon} alt="GitHub" className="w-6 h-6" />
             </a>
             <a href="https://github.com/kelsob" target="_blank" rel="noopener noreferrer" className="hidden md:block mr-1 text-white">
               github.com/kelsob
@@ -59,7 +61,7 @@ const Navbar = () => {
           {/* Location Icon and Text */}
           <div className="flex items-center pr-2">
             <a href="https://www.google.com/maps/place/Guelph,+ON" target="_blank" rel="noopener noreferrer" className="mr-1">
-              <img src="src/assets/techicons/location-icon.svg" alt="Location" className="w-6 h-6" />
+              <img src={locationIcon} alt="Location" className="w-6 h-6" />
             </a>
             <a href="https://www.google.com/maps/place/Guelph,+ON" target="_blank" rel="noopener noreferrer" className="hidden md:block mr-1 text-white">
               Guelph, ON

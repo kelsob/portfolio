@@ -29,7 +29,7 @@ export const MainBackgroundParticles = () => {
       size: "cover",
       opacity: 1
     },
-    fpsLimit: 120,
+    fpsLimit: 60,
     interactivity: {
       detectsOn: "window",
       events: {
@@ -57,10 +57,10 @@ export const MainBackgroundParticles = () => {
 
     particles: {
       number: {
-        value: 1600,
+        value: 464,
         density: {
           enable: true,
-          area: 800,
+          area: 1000,
         }
       },
       color: {
@@ -90,10 +90,11 @@ export const MainBackgroundParticles = () => {
       },
       links: {
         enable: true,
-        distance: 16,
+        distance: 64,
         color: "#ffffff",
         opacity: 0.5,
         width: 1,
+        duration:0.5
       }
     },
     polygon: {
@@ -102,7 +103,7 @@ export const MainBackgroundParticles = () => {
         arrangement: "equidistant", // Arrange particles evenly along the shape
       },
       move: {
-        radius: 6,
+        radius: 3,
         type: "path"
       },
       scale: 1.25,
