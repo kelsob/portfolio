@@ -6,11 +6,14 @@ import { MainBackgroundParticles } from '../components/particles/MainBackgroundP
 
 const MainContent = () => {
   return (
-    <div className="flex flex-grow min-h-screen pt-0 relative">
+    <div className="flex min-h-screen pt-0 relative">
       {/* Left Navigation Area */}
-      <Sidebar />
+      <div className=" w-40">
+        <Sidebar />
+      </div>
+      
       {/* Right Content Area */}
-      <div className="w-3/4 bg-white dark:bg-gray-700 transition-colors duration-300 ml-auto mt-12 relative">
+      <div className="w-full bg-white dark:bg-gray-700 transition-colors duration-300 mt-12 relative">
         
         {/* Particles Background */}
         <div className="absolute inset-0 z-0">
@@ -23,16 +26,16 @@ const MainContent = () => {
             <section id="home" className="pt-16 -mt-16">
               <Home />
             </section>
-            <div className="flex w-full items-center justify-center align-center">
+            <div className="flex w-full items-center justify-center">
               <div className="w-3/4 h-0 rounded bg-lightColor border border-superLightColor dark:bg-gray-600 my-2"></div>
             </div>
-            <section id="portfolio" className="">
+            <section id="portfolio">
               <Portfolio />
             </section>
-            <div className="flex w-full items-center justify-center align-center">
+            <div className="flex w-full items-center justify-center">
               <div className="w-3/4 h-0 rounded bg-lightColor border border-superLightColor dark:bg-gray-600 my-2"></div>
             </div>
-            <section id="contact" className="">
+            <section id="contact">
               <Contact />
             </section>
           </div>

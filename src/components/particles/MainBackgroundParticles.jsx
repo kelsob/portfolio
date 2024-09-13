@@ -21,6 +21,9 @@ export const MainBackgroundParticles = () => {
 
   const options = useMemo(
     () => ({
+      fullScreen: {
+        enable: false
+      },
       background: {
         color: {
           value: '#0d2056', // Background color (can be changed or set to transparent)

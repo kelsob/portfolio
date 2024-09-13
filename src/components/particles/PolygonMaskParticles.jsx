@@ -21,26 +21,23 @@ export const PolygonMaskParticles = () => {
 
   const options = useMemo(() => ({
     fpsLimit: 60,
+
+    fullScreen: {
+      enable: false
+    },
     interactivity: {
       detectsOn: "window",
       events: {
-        onClick: {
-          enable: true,
-          mode: "push"
-        },
         onHover: {
           enable: true,
           mode: "bubble",
         }
       },
       modes: {
-        push: {
-          quantity: 4,
-        },
         bubble: {
           distance: 40,
           duration: 2,
-          size: 6,
+          size: 3,
           opacity: 8
         },
       }
@@ -48,14 +45,14 @@ export const PolygonMaskParticles = () => {
 
     particles: {
       number: {
-        value: 464,
+        value: 600,
         density: {
-          enable: true,
-          area: 1000,
+          enable: false,
+          area: 10,
         }
       },
       color: {
-        value: ["#4285f4", "#34A853", "#FBBC05", "#EA4335"], // Google-themed colors
+        value: ["#bee9ee", "7cd9e4", "#02badb", "#0096b0", "#006e81"], // Google-themed colors
       },
       shape: {
         type: "circle",
@@ -73,19 +70,20 @@ export const PolygonMaskParticles = () => {
       },
       move: {
         enable: true,
-        speed: 1,
-        direction: "none",
+        speed: 0.25,
+        direction: "inline",
         outModes: {
           default: "bounce",
         }
       },
       links: {
         enable: true,
-        distance: 16,
-        color: "#ffffff",
+        distance: 12,
+        color: {
+          value: ["7cd9e4"], // Google-themed colors
+        },
         opacity: 0.5,
         width: 1,
-        duration:0.5
       }
     },
     polygon: {
@@ -94,16 +92,19 @@ export const PolygonMaskParticles = () => {
         arrangement: "equidistant", // Arrange particles evenly along the shape
       },
       move: {
-        radius: 1,
-        type: "path"
+        radius: 3,
+        type: "path",
+        outModes: {
+          default: "bounce",
+        },
       },
       scale: 1,
       type: "inline",
       // Use the local SVG file you imported
       url: benkelsoIcon,
       position: {
-        x: 12.5, // Adjust position to center
-        y: 45
+        x: 27, // Adjust position to center
+        y: -5
       }
     },
     detectRetina: true,
@@ -115,7 +116,7 @@ export const PolygonMaskParticles = () => {
         id="tsparticles2"
         particlesLoaded={particlesLoaded} // Callback when particles are loaded
         options={options} // Particles options
-        className="z-0 absolute" // Assign z-index to ensure particles are behind content
+        className="" // Assign z-index to ensure particles are behind content
       />
     );
   }

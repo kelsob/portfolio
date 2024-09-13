@@ -19,7 +19,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed top-0 w-full p-2 border-b-4 pl-8 pr-8 transition-colors duration-300 rounded-br-2xl z-20 ${
+      className={`fixed top-0 w-full p-2 border-b-4 transition-colors duration-300 z-20 ${
         isDarkMode
           ? 'bg-darkColor border-mainColor text-white'
           : 'bg-mainColor border-lightColor text-black'
@@ -28,26 +28,24 @@ const Navbar = () => {
         boxShadow: '0 4px 10px rgba(0, 0, 0, 0.15)', 
       }}
     >
-      <div className="max-w-7xl mx-auto flex justify-between items-center">
+      <div className="flex justify-between items-center w-full px-6">
         {/* Left Side - Name and Title */}
         <div className="flex items-center space-x-4">
           <div
-            className={`w-min whitespace-nowrap font-bold text-2xl rounded-xl flex items-center justify-center pl-2 pr-2 transition-colors duration-300 border-2 border-lightColor ${
-              isDarkMode
-                ? 'text-white bg-mainColor'
-                : 'text-mainColor bg-white'
+            className={`font-bold text-2xl rounded-xl pl-2 pr-2 transition-colors duration-300 border-2 border-lightColor ${
+              isDarkMode ? 'text-white bg-mainColor' : 'text-mainColor bg-white'
             }`}
             style={{ userSelect: 'none' }}
           >
             Ben Kelso
           </div>
-          <div className="text-white whitespace-nowrap">
+          <div className={`whitespace-nowrap ${isDarkMode ? 'text-superLightColor' : 'text-white'}`}>
             Web Developer
           </div>
         </div>
 
         {/* Right Side - External Links */}
-        <div className="flex space-x-0 items-center">
+        <div className="flex space-x-6 items-center">
           {/* GitHub Icon and Text */}
           <div className="flex items-center">
             <a href="https://github.com/kelsob" target="_blank" rel="noopener noreferrer" className="mr-2">
@@ -59,7 +57,7 @@ const Navbar = () => {
           </div>
 
           {/* Location Icon and Text */}
-          <div className="flex items-center pr-2">
+          <div className="flex items-center">
             <a href="https://www.google.com/maps/place/Guelph,+ON" target="_blank" rel="noopener noreferrer" className="mr-1">
               <img src={locationIcon} alt="Location" className="w-6 h-6" />
             </a>

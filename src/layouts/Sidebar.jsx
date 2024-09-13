@@ -3,7 +3,6 @@ import sidebarBgLight from '../../src/assets/bgimages/sidebar-bg-light.png';
 import sidebarBgDark from '../../src/assets/bgimages/sidebar-bg-dark.png';
 import { PolygonMaskParticles } from '../components/particles/PolygonMaskParticles';
 
-
 const Sidebar = () => {
   const [activeSection, setActiveSection] = useState('home');
 
@@ -30,7 +29,7 @@ const Sidebar = () => {
   }, []);
 
   return (
-    <aside className="fixed w-1/4 min-h-screen border-r-4 z-10 border-mainColor dark:border-superDarkColor">
+    <aside className="fixed w-40 min-h-screen border-r-4 z-10 border-mainColor dark:border-superDarkColor">
       {/* Background Layer */}
       <div className="absolute inset-0">
         {/* Light mode background */}
@@ -55,11 +54,11 @@ const Sidebar = () => {
           }}
         ></div>
       </div>
-      <div className="absolute inset-0 z-0" style={{ width: '0%', height: '5%', position: 'relative' }}>
+
+      {/* Particle Layer aligned to the bottom */}
+      <div className="fixed bottom-0 left-0 z-0">
         <PolygonMaskParticles />
       </div>
-
-
 
       {/* Content Layer */}
       <div className="relative z-10 flex flex-col items-end justify-start pt-20 pr-4 min-h-screen drop-shadow-lg overflow-y-auto">
