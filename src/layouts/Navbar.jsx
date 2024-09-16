@@ -1,6 +1,4 @@
 import { useState, useEffect } from 'react';
-import githubIcon from '../../src/assets/techicons/github-icon.svg';
-import locationIcon from '../../src/assets/techicons/location-icon.svg';
 
 const Navbar = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -46,25 +44,6 @@ const Navbar = () => {
 
         {/* Right Side - External Links */}
         <div className="flex space-x-6 items-center">
-          {/* GitHub Icon and Text */}
-          <div className="flex items-center">
-            <a href="https://github.com/kelsob" target="_blank" rel="noopener noreferrer" className="mr-2">
-              <img src={githubIcon} alt="GitHub" className="w-6 h-6" />
-            </a>
-            <a href="https://github.com/kelsob" target="_blank" rel="noopener noreferrer" className="hidden md:block mr-1 text-white">
-              github.com/kelsob
-            </a>
-          </div>
-
-          {/* Location Icon and Text */}
-          <div className="flex items-center">
-            <a href="https://www.google.com/maps/place/Guelph,+ON" target="_blank" rel="noopener noreferrer" className="mr-1">
-              <img src={locationIcon} alt="Location" className="w-6 h-6" />
-            </a>
-            <a href="https://www.google.com/maps/place/Guelph,+ON" target="_blank" rel="noopener noreferrer" className="hidden md:block mr-1 text-white">
-              Guelph, ON
-            </a>
-          </div>
 
           {/* Dark Mode Toggle */}
           <div

@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import sidebarBgLight from '../../src/assets/bgimages/sidebar-bg-light.png';
 import sidebarBgDark from '../../src/assets/bgimages/sidebar-bg-dark.png';
+import githubIcon from '../../src/assets/techicons/github-icon.svg';
+import locationIcon from '../../src/assets/techicons/location-icon.svg';
 import { PolygonMaskParticles } from '../components/particles/PolygonMaskParticles';
 
 const Sidebar = () => {
@@ -111,6 +113,21 @@ const Sidebar = () => {
               ></div>
             </div>
           </nav>
+          <div className="flex pt-4 space-x-2 justify-center">
+          {/* GitHub Icon and Text */}
+            <div className="flex items-center">
+              <a href="https://github.com/kelsob" target="_blank" rel="noopener noreferrer" className="mr-2">
+                <img src={githubIcon} alt="GitHub" className="w-6 h-6" />
+              </a>
+            </div>
+
+            {/* Location Icon and Text */}
+            <div className="flex items-center">
+              <a href="https://www.google.com/maps/place/Guelph,+ON" target="_blank" rel="noopener noreferrer" className="mr-1">
+                <img src={locationIcon} alt="Location" className="w-6 h-6" />
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </aside>
