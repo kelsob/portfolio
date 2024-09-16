@@ -8,17 +8,17 @@ const MainContent = () => {
   return (
     <div className="flex min-h-screen pt-auto relative">
       {/* Left Navigation Area */}
-      <div className=" w-40">
+      <div className="w-40 hidden sm:block">
         <Sidebar />
       </div>
       
       {/* Right Content Area */}
-      <div className="w-full pl-10 bg-white dark:bg-gray-700 transition-colors duration-300 mt-12 relative">
+      <div className="w-full sm:pl-6 bg-white dark:bg-gray-700 transition-colors duration-300 mt-12 relative">
         
         {/* Particles Background */}
-        <div className="absolute inset-0 z-0">
-          <MainBackgroundParticles />
-        </div>
+
+        <MainBackgroundParticles />
+
 
         {/* Main Content */}
         <div className="relative z-10">

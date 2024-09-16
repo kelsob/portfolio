@@ -22,7 +22,7 @@ export const MainBackgroundParticles = () => {
   const options = useMemo(
     () => ({
       fullScreen: {
-        enable: false
+        enable: true
       },
       background: {
         color: {
@@ -107,7 +107,6 @@ export const MainBackgroundParticles = () => {
         id="tsparticles"
         particlesLoaded={particlesLoaded} // Optional callback
         options={options} // Particle options
-        className="z-0" // Confine the particles to the sidebar
 
       />
     );
