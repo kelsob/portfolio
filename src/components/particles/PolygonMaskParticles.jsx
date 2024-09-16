@@ -103,8 +103,8 @@ export const PolygonMaskParticles = () => {
       // Use the local SVG file you imported
       url: benkelsoIcon,
       position: {
-        x: 27, // Adjust position to center
-        y: -5
+        x: 27.5, // Adjust position to center
+        y: 0
       }
     },
     detectRetina: true,
@@ -116,7 +116,7 @@ export const PolygonMaskParticles = () => {
         id="tsparticles2"
         particlesLoaded={particlesLoaded} // Callback when particles are loaded
         options={options} // Particles options
-        className="h-32 pl-4 mb-4" // Assign z-index to ensure particles are behind content
+        className="" // Assign z-index to ensure particles are behind content
       />
     );
   }
