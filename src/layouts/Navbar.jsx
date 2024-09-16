@@ -23,29 +23,31 @@ const Navbar = () => {
           : 'bg-mainColor border-lightColor text-black'
       }`}
       style={{
-        boxShadow: '0 4px 10px rgba(0, 0, 0, 0.15)', 
+        boxShadow: '0 4px 10px rgba(0, 0, 0, 0.15)',
       }}
     >
-      <div className="flex justify-between items-center w-full px-6">
+      <div className="flex justify-between items-center w-full pl-0 pr-0">
         {/* Left Side - Name and Title */}
-        <div className="flex items-center space-x-4">
+        <div className="flex items-center space-x-2 sm:space-x-4 min-w-0 ml-2">
           <div
             className={`font-bold text-2xl rounded-xl pl-2 pr-2 transition-colors duration-300 border-2 border-lightColor ${
               isDarkMode ? 'text-white bg-mainColor' : 'text-mainColor bg-white'
-            }`}
-            style={{ userSelect: 'none' }}
+            } whitespace-nowrap overflow-hidden text-ellipsis`}
+            style={{ userSelect: 'none', maxWidth: '150px' }}
           >
             Ben Kelso
           </div>
-          <div className={`whitespace-nowrap ${isDarkMode ? 'text-superLightColor' : 'text-white'}`}>
+          <div
+            className={`whitespace-nowrap ${
+              isDarkMode ? 'text-superLightColor' : 'text-white'
+            }`}
+          >
             Web Developer
           </div>
         </div>
 
-        {/* Right Side - External Links */}
-        <div className="flex space-x-6 items-center">
-
-          {/* Dark Mode Toggle */}
+        {/* Right Side - Dark Mode Toggle */}
+        <div className="flex items-center mr-2">
           <div
             onClick={toggleDarkMode}
             className={`w-14 h-8 flex items-center rounded-full p-1 cursor-pointer transition-colors duration-300 border-2 border-superLightColor dark:border-mainColor ${

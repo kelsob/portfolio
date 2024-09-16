@@ -58,7 +58,7 @@ const Sidebar = () => {
       </div>
 
       {/* Particle Layer aligned to the bottom */}
-      <div className="fixed bottom-0 left-0 z-0">
+      <div className="w-full flex fixed bottom-0 z-0 sm:bottom-0 sm:left-0 items-center">
         <PolygonMaskParticles />
       </div>
 

@@ -116,7 +116,7 @@ export const PolygonMaskParticles = () => {
         id="tsparticles2"
         particlesLoaded={particlesLoaded} // Callback when particles are loaded
         options={options} // Particles options
-        className="" // Assign z-index to ensure particles are behind content
+        className="h-32 pl-4 mb-4" // Assign z-index to ensure particles are behind content
       />
     );
   }
