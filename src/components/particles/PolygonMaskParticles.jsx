@@ -25,6 +25,11 @@ export const PolygonMaskParticles = () => {
     fullScreen: {
       enable: false
     },
+//    background: {
+//      color: {
+//       value: '#ffffff', // Background color (can be changed or set to transparent)
+//      },
+//    },
     interactivity: {
       detectsOn: "window",
       events: {
@@ -52,7 +57,7 @@ export const PolygonMaskParticles = () => {
         }
       },
       color: {
-        value: ["#bee9ee", "7cd9e4", "#02badb", "#0096b0", "#006e81"], // Google-themed colors
+        value: ["#bee9ee", "7cd9e4", "#02badb", "#0096b0", "#006e81"], 
       },
       shape: {
         type: "circle",
@@ -103,8 +108,8 @@ export const PolygonMaskParticles = () => {
       // Use the local SVG file you imported
       url: benkelsoIcon,
       position: {
-        x: 27.5, // Adjust position to center
-        y: 0
+        x: 50, // Adjust position to center
+        y: 2.5
       }
     },
     detectRetina: true,
@@ -116,7 +121,6 @@ export const PolygonMaskParticles = () => {
         id="tsparticles2"
         particlesLoaded={particlesLoaded} // Callback when particles are loaded
         options={options} // Particles options
-        className="" // Assign z-index to ensure particles are behind content
       />
     );
   }
