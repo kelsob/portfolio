@@ -8,7 +8,7 @@ const MainContent = () => {
   return (
     <div className="flex min-h-screen pt-auto relative">
       {/* Left Navigation Area */}
-      <div className="w-40">
+      <div className="w-40 hidden sm:block">
         <Sidebar />
       </div>
       
