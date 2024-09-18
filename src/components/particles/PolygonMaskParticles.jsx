@@ -121,6 +121,7 @@ export const PolygonMaskParticles = () => {
         id="tsparticles2"
         particlesLoaded={particlesLoaded} // Callback when particles are loaded
         options={options} // Particles options
+        className="z-50"
       />
     );
   }
