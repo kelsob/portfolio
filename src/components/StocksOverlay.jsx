@@ -62,14 +62,13 @@ export function StocksOverlay({ isOpen, onClose }) {
         {/* Image 1 */}
         <div className="flex flex-col sm:flex-row sm:space-x-4 items-start mb-6">
           <img src={image1} alt="Screenshot 1" className="w-full sm:w-2/3 rounded-lg shadow-md mb-4 sm:mb-0 border-2 border-darkColor" />
-          <div className="sm:w-1/3 text-left border-2 border-darkColor bg-white rounded p-2">
+          <div className="caption-card sm:w-1/3 text-left border-2 border-darkColor bg-white rounded p-2">
             <span className="text-lg font-bold block mb-2">1.</span>
             <p className="text-sm">
               Screenshot of the dashboard showing real-time stock fluctuations and user portfolio overview.
             </p>
           </div>
         </div>
-
 
         <div className="flex w-full items-center justify-center align-center">
        <div className="w-3/4 h-0 rounded border border-darkColor dark:bg-gray-600 my-2"></div>
@@ -78,7 +77,7 @@ export function StocksOverlay({ isOpen, onClose }) {
         {/* Image 2 */}
         <div className="flex flex-col sm:flex-row sm:space-x-4 items-start mb-6">
           <img src={image2} alt="Screenshot 2" className="w-full sm:w-2/3 rounded-lg shadow-md mb-4 sm:mb-0 border-2 border-darkColor" />
-          <div className="sm:w-1/3 text-left border-2 border-darkColor bg-white rounded p-2">
+          <div className="caption-card sm:w-1/3 text-left border-2 border-darkColor bg-white rounded p-2">
             <span className="text-lg font-bold block mb-2">2.</span>
             <p className="text-sm">
               Shows the stock purchase interface where users can buy or sell stocks based on market trends.
@@ -94,7 +93,7 @@ export function StocksOverlay({ isOpen, onClose }) {
         {/* Image 3 */}
         <div className="flex flex-col sm:flex-row sm:space-x-4 items-start mb-6">
           <img src={image3} alt="Screenshot 3" className="w-full sm:w-2/3 rounded-lg shadow-md mb-4 sm:mb-0 border-2 border-darkColor" />
-          <div className="sm:w-1/3 text-left border-2 border-darkColor bg-white rounded p-2">
+          <div className="caption-card sm:w-1/3 text-left border-2 border-darkColor bg-white rounded p-2">
             <span className="text-lg font-bold block mb-2">3.</span>
             <p className="text-sm">
               This shows the detailed stock performance page with historical data and stock trends over time.
@@ -110,7 +109,7 @@ export function StocksOverlay({ isOpen, onClose }) {
         {/* Image 4 */}
         <div className="flex flex-col sm:flex-row sm:space-x-4 items-start mb-6">
           <img src={image4} alt="Screenshot 4" className="w-full sm:w-2/3 rounded-lg shadow-md mb-4 sm:mb-0 border-2 border-darkColor" />
-          <div className="sm:w-1/3 text-left border-2 border-darkColor bg-white rounded p-2">
+          <div className="caption-card sm:w-1/3 text-left border-2 border-darkColor bg-white rounded p-2">
             <span className="text-lg font-bold block mb-2">4.</span>
             <p className="text-sm">
               Admin panel for managing stock information, user accounts, and overall platform settings.

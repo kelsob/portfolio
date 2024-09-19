@@ -61,7 +61,7 @@ export function FriendFarmOverlay({ isOpen, onClose }) {
         {/* Video 1 */}
         <div className="flex flex-col sm:flex-row sm:space-x-4 items-start mb-6">
           <video controls className="w-full sm:w-2/3 rounded-lg shadow-md mb-4 sm:mb-0" src={video1}></video>
-          <div className="sm:w-1/3 text-left border-2 border-darkColor bg-white rounded p-2">
+          <div className="caption-card sm:w-1/3 text-left border-2 border-darkColor bg-white rounded p-2">
             <span className="text-lg font-bold block mb-2">1.</span>
             <p className="text-sm">
               The main menu, as well as first lines of dialogue in the introduction. Intended as an homage to early pokémon in art style and tone.
@@ -74,7 +74,7 @@ export function FriendFarmOverlay({ isOpen, onClose }) {
         {/* Video 2 */}
         <div className="flex flex-col sm:flex-row sm:space-x-4 items-start mb-6">
           <video controls className="w-full sm:w-2/3 rounded-lg shadow-md mb-4 sm:mb-0" src={video2}></video>
-          <div className="sm:w-1/3 text-left border-2 border-darkColor bg-white rounded p-2">
+          <div className="caption-card sm:w-1/3 text-left border-2 border-darkColor bg-white rounded p-2">
             <span className="text-lg font-bold block mb-2">2.</span>
             <p className="text-sm">
               Shows a player collecting seeds and crops from a basic farm with a variety of different plants.
@@ -87,7 +87,7 @@ export function FriendFarmOverlay({ isOpen, onClose }) {
         {/* Video 3 */}
         <div className="flex flex-col sm:flex-row sm:space-x-4 items-start mb-6">
           <video controls className="w-full sm:w-2/3 rounded-lg shadow-md mb-4 sm:mb-0" src={video3}></video>
-          <div className="sm:w-1/3 text-left border-2 border-darkColor bg-white rounded p-2">
+          <div className="caption-card sm:w-1/3 text-left border-2 border-darkColor bg-white rounded p-2">
             <span className="text-lg font-bold block mb-2">3.</span>
             <p className="text-sm">
               Shows a player picking up items from different angles, each with unique animations.
@@ -95,12 +95,12 @@ export function FriendFarmOverlay({ isOpen, onClose }) {
           </div>
         </div>
         <div className="flex w-full items-center justify-center align-center">
-       <div className="w-3/4 h-0 rounded border border-darkColor dark:bg-gray-600 my-2"></div>
+       <div className="caption-card w-3/4 h-0 rounded border border-darkColor dark:bg-gray-600 my-2"></div>
       </div>
         {/* Video 4 */}
         <div className="flex flex-col sm:flex-row sm:space-x-4 items-start mb-6">
           <video controls className="w-full sm:w-2/3 rounded-lg shadow-md mb-4 sm:mb-0" src={video4}></video>
-          <div className="sm:w-1/3 text-left border-2 border-darkColor bg-white rounded p-2">
+          <div className="caption-card sm:w-1/3 text-left border-2 border-darkColor bg-white rounded p-2">
             <span className="text-lg font-bold block mb-2">4.</span>
             <p className="text-sm">
               This clip shows a player sprinting through heavy rain-fall. It also includes npcs who are moving through the world to escape the rain.
