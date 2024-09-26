@@ -38,8 +38,7 @@ const Navbar = () => {
             Ben Kelso
           </div>
           <div
-            className={`whitespace-nowrap ${
-              isDarkMode ? 'text-superLightColor' : 'text-white'
+            className={`whitespace-nowrap transition-colors duration-300 text-white
             }`}
           >
             Web Developer

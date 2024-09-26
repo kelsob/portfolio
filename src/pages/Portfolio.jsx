@@ -19,10 +19,10 @@ const Portfolio = () => {
     <div className="min-h-auto flex flex-col justify-center p-6 pt-4 mt-12">
       <div className="w-full max-w-4xl mx-auto">
         {/* Portfolio Header */}
-        <h1 className="text-4xl font-bold mb-4 text-center">Portfolio</h1>
+        <h1 className="text-4xl font-bold mb-4 text-center transition-colors duration-300">Portfolio</h1>
 
         {/* Web Development Projects */}
-        <h2 className="text-2xl font-semibold mb-4 text-left">Web Development</h2>
+        <h2 className="text-2xl font-semibold mb-4 text-left transition-colors duration-300">Web Development</h2>
         <div className="portfolio-card space-y-6 transition-colors duration-300">
           <div 
             className="flex flex-col sm:flex-row items-center rounded-lg shadow-md p-4 transition-colors duration-300 hover:shadow-xl cursor-pointer"
@@ -30,15 +30,15 @@ const Portfolio = () => {
           >
             <img src={stockDetailsImage} alt="Simulated Stock Market" className="sm:w-1/3 h-auto max-w-full object-center border-2 border-superLightColor rounded-sm sm:mr-4 mb-4 sm:mb-0 flex-shrink-0 shadow-lg" />
             <div className="flex flex-col justify-center text-left">
-              <h3 className="text-md font-bold mb-2 transition-colors drop-shadow-lg">Simulated Stock Market</h3>
-              <p className="text-xs transition-colors">This platform allows users to buy and sell fictional stocks in real-time, using virtual currency. Track your portfolio and see how the market evolves!</p>
-              <p className="text-xs scale-75 italic text-right transition-colors">Click for more details.</p>
+              <h3 className="text-md font-bold mb-2 transition-colors duration-300 drop-shadow-lg">Simulated Stock Market</h3>
+              <p className="text-xs transition-colors duration-300">This platform allows users to buy and sell fictional stocks in real-time, using virtual currency. Track your portfolio and see how the market evolves!</p>
+              <p className="text-xs scale-75 italic text-right transition-colors duration-300">Click for more details.</p>
             </div>
           </div>
         </div>
 
         {/* Game Development Projects */}
-        <h2 className="text-2xl font-semibold mb-4 mt-12 text-left">Game Development</h2>
+        <h2 className="text-2xl font-semibold mb-4 mt-12 text-left transition-colors duration-300">Game Development</h2>
         <div className="portfolio-card space-y-6 transition-colors duration-300">
           <div 
             className="flex flex-col sm:flex-row items-center rounded-lg shadow-md p-4 transition-colors duration-300 hover:shadow-xl cursor-pointer"
@@ -46,9 +46,9 @@ const Portfolio = () => {
           >
             <img src={friendFarmTitleScreen} alt="Friend Farm" className="sm:w-1/3 h-auto max-w-full object-center border-2 border-superLightColor rounded-sm sm:mr-4 mb-4 sm:mb-0 flex-shrink-0 shadow-lg" />
             <div className="flex flex-col justify-center text-left">
-              <h3 className="text-md font-bold mb-2 transition-colors drop-shadow-lg">Friend Farm</h3>
-              <p className="text-xs transition-colors">Friend Farm is an in-progress 2D adventure built in the Godot engine, showcasing beautiful pixel art, engaging farming mechanics, dynamic weather systems, and NPCs with complex daily routines and behaviors.</p>
-              <p className="text-xs scale-75 italic text-right transition-colors">Click for more details.</p>
+              <h3 className="text-md font-bold mb-2 transition-colors duration-300 drop-shadow-lg">Friend Farm</h3>
+              <p className="text-xs transition-colors duration-300">Friend Farm is an in-progress 2D adventure built in the Godot engine, showcasing beautiful pixel art, engaging farming mechanics, dynamic weather systems, and NPCs with complex daily routines and behaviors.</p>
+              <p className="text-xs scale-75 italic text-right transition-colors duration-300">Click for more details.</p>
             </div>
           </div>
         </div>

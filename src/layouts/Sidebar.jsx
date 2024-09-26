@@ -36,7 +36,7 @@ const Sidebar = () => {
       <div className="absolute inset-0">
         {/* Light mode background */}
         <div
-          className="absolute inset-0 transition-opacity duration-500 opacity-100 dark:opacity-0"
+          className="absolute inset-0 transition-opacity duration-300 opacity-100 dark:opacity-0"
           style={{
             backgroundImage: `url(${sidebarBgLight})`,
             backgroundPosition: 'right center',
@@ -47,7 +47,7 @@ const Sidebar = () => {
 
         {/* Dark mode background */}
         <div
-          className="absolute inset-0 transition-opacity duration-500 dark:opacity-100 opacity-0"
+          className="absolute inset-0 transition-opacity duration-300 dark:opacity-100 opacity-0"
           style={{
             backgroundImage: `url(${sidebarBgDark})`,
             backgroundPosition: 'right center',

@@ -25,7 +25,7 @@ const Home = () => {
       </div>
 
       {/* Technologies Section */}
-      <h3>Experienced with:</h3>
+      <h3 className="text-mainColor dark:text-white transition-colors duration-300">Experienced with:</h3>
       <div className="technology-section">
         <div className="technology-card">
           <img src={reactIcon} alt="React" />

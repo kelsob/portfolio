@@ -2,10 +2,10 @@ const Contact = () => {
   return (
     <div className="min-h-auto flex items-center justify-center p-4">
       <div className="max-w-lg w-full">
-        <h1 className="text-4xl font-bold mb-4 text-center">Contact Me</h1>
+        <h1 className="text-4xl font-bold mb-4 text-center transition-colors duration-300">Contact Me</h1>
         <form className="space-y-4">
           <div>
-            <label className="block text-lg mb-2" htmlFor="name">Name</label>
+            <label className="block text-lg mb-2 transition-colors duration-300" htmlFor="name">Name</label>
             <input
               type="text"
               id="name"
@@ -14,7 +14,7 @@ const Contact = () => {
             />
           </div>
           <div>
-            <label className="block text-lg mb-2" htmlFor="email">Email</label>
+            <label className="block text-lg mb-2 transition-colors duration-300" htmlFor="email">Email</label>
             <input
               type="email"
               id="email"
@@ -23,7 +23,7 @@ const Contact = () => {
             />
           </div>
           <div>
-            <label className="block text-lg mb-2" htmlFor="message">Message</label>
+            <label className="block text-lg mb-2 transition-colors duration-300" htmlFor="message">Message</label>
             <textarea
               id="message"
               className="w-full p-3 rounded border border-gray-300 bg-gray-50 focus:bg-white focus:outline-none focus:ring-2 focus:ring-blue-500"
@@ -38,11 +38,11 @@ const Contact = () => {
             Send Message
           </button>
         </form>
-        <div className="mt-8 text-center">
+        <div className="mt-8 text-center transition-colors duration-300">
           <p>You can also reach me at:</p>
           <a
             href="mailto:kelsob@gmail.com"
-            className="hover:underline"
+            className="hover:underline transition-colors duration-300"
           >
             kelsob@gmail.com
           </a>
