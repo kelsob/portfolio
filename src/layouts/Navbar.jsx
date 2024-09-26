@@ -30,7 +30,7 @@ const Navbar = () => {
         {/* Left Side - Name and Title */}
         <div className="flex items-center space-x-2 sm:space-x-4 min-w-0 ml-2">
           <div
-            className={`font-bold text-2xl rounded-xl pl-2 pr-2 transition-colors duration-300 border-2 border-lightColor ${
+            className={`font-bold text-2xl rounded-lg pl-2 pr-2 transition-colors duration-300 border-2 border-lightColor ${
               isDarkMode ? 'text-white bg-mainColor' : 'text-mainColor bg-white'
             } whitespace-nowrap overflow-hidden text-ellipsis`}
             style={{ userSelect: 'none', maxWidth: '150px' }}

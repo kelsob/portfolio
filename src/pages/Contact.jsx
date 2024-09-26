@@ -47,7 +47,6 @@ const Contact = () => {
             kelsob@gmail.com
           </a>
         </div>
-        <h1 className="text-5xl font-bold mb-2 mt-4 text-start">&lt;/Ben Kelso&gt;</h1>
       </div>
     </div>
   );
