@@ -31,26 +31,53 @@ export function StocksOverlay({ isOpen, onClose }) {
       <div className="flex w-full items-center justify-center align-center">
         <div className="w-3/4 h-0 rounded bg-lightColor border border-superLightColor dark:bg-gray-600 my-2"></div>
       </div>
-      <h3 className="text-lg font-semibold mb-2">Technologies Used</h3>
-      <div className="flex w-full justify-center items-center space-x-6 mb-2">
-
-        <div className="flex flex-col items-center">
-          <img src={phpLogo} alt="PHP" className="w-12 h-12 bg-white dark:bg-white p-2 rounded border-2 dark:border-gray-400 shadow-md" />
-          <span className="text-sm mt-2">PHP</span>
-        </div>
-        <div className="flex flex-col items-center">
-          <img src={laravelLogo} alt="Laravel" className="w-12 h-12 bg-white dark:bg-white p-2 rounded border-2 dark:border-gray-400 shadow-md" />
-          <span className="text-sm mt-2">Laravel</span>
-        </div>
-        <div className="flex flex-col items-center">
-          <img src={livewireLogo} alt="Livewire" className="w-12 h-12 bg-white dark:bg-white p-2 rounded border-2 dark:border-gray-400 shadow-md" />
-          <span className="text-sm mt-2">Livewire</span>
-        </div>
-        <div className="flex flex-col items-center">
-          <img src={tailwindLogo} alt="Tailwind" className="w-12 h-12 bg-white dark:bg-white p-2 rounded border-2 dark:border-gray-400 shadow-md" />
-          <span className="text-sm mt-2">Tailwind CSS</span>
-        </div>
+      <h3 className="text-lg font-semibold">Technologies Used</h3><div className="flex flex-wrap justify-center items-center space-x-4 space-y-4 sm:space-y-0 sm:space-x-6 mb-4">
+      <div className="flex flex-wrap items-end space-x-4 space-y-4 sm:space-y-0 sm:space-x-6">
+      {/* PHP Logo */}
+      <div className="flex flex-col items-center justify-center flex-shrink-0">
+        <img
+          src={phpLogo}
+          alt="PHP"
+          className="w-12 h-12 sm:w-12 sm:h-12 bg-white dark:bg-gray-700 p-2 rounded border-2 border-darkColor shadow-md"
+        />
+        <span className="text-xs sm:text-sm mt-2 text-gray-900 dark:text-gray-100">PHP</span>
       </div>
+
+      {/* Laravel Logo */}
+      <div className="flex flex-col items-center justify-center flex-shrink-0">
+        <img
+          src={laravelLogo}
+          alt="Laravel"
+          className="w-12 h-12 sm:w-12 sm:h-12 bg-white dark:bg-gray-700 p-2 rounded border-2 border-darkColor shadow-md"
+        />
+        <span className="text-xs sm:text-sm mt-2 text-gray-900 dark:text-gray-100">Laravel</span>
+      </div>
+
+      {/* Livewire Logo */}
+      <div className="flex flex-col items-center justify-center flex-shrink-0">
+        <img
+          src={livewireLogo}
+          alt="Livewire"
+          className="w-12 h-12 sm:w-12 sm:h-12 bg-white dark:bg-gray-700 p-2 rounded border-2 border-darkColor shadow-md"
+        />
+        <span className="text-xs sm:text-sm mt-2 text-gray-900 dark:text-gray-100">Livewire</span>
+      </div>
+
+      {/* Tailwind CSS Logo */}
+      <div className="flex flex-col items-center justify-center flex-shrink-0">
+        <img
+          src={tailwindLogo}
+          alt="Tailwind"
+          className="w-12 h-12 sm:w-12 sm:h-12 bg-white dark:bg-gray-700 p-2 rounded border-2 border-darkColor shadow-md"
+        />
+        <span className="text-xs sm:text-sm mt-2 text-gray-900 dark:text-gray-100">Tailwind CSS</span>
+      </div>
+    </div>
+
+
+
+    </div>
+
 
       <div className="flex w-full items-center justify-center align-center">
         <div className="w-3/4 h-0 rounded bg-lightColor border border-superLightColor dark:bg-gray-600 my-2"></div>
