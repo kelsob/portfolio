@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import sidebarBgLight from '../../src/assets/bgimages/sidebar-bg-light.png';
 import sidebarBgDark from '../../src/assets/bgimages/sidebar-bg-dark.png';
-import githubIcon from '../../src/assets/techicons/github-icon.svg';
-import locationIcon from '../../src/assets/techicons/location-icon.svg';
+import githubIcon from '../../src/assets/techicons/github-icon-blue.svg';
+import locationIcon from '../../src/assets/techicons/location-icon-blue.svg';
 import { PolygonMaskParticles } from '../components/particles/PolygonMaskParticles';
 
 const Sidebar = () => {
@@ -58,21 +58,21 @@ const Sidebar = () => {
       </div>
 
       {/* Particle Layer aligned to the bottom */}
-      <div className="w-full flex fixed pl-4 pb-8 bottom-0 z-50 sm:bottom-0 sm:left-0 items-center">
+      <div className="w-full flex fixed pl-5 pb-5 bottom-0 z-0 sm:bottom-0 sm:left-0 items-center">
         <PolygonMaskParticles />
       </div>
 
       {/* Content Layer */}
       <div className="relative z-10 flex flex-col items-end justify-start pt-20 pr-4 min-h-screen drop-shadow-lg overflow-y-auto">
         <div className="">
-          <nav className="space-y-4 text-right rounded-lg p-4 bg-gray-400 bg-opacity-30">
+          <nav className="space-y-4 text-right rounded-lg p-4 border border-darkColor bg-superDarkColor bg-opacity-50">
             <div className="relative pr-6 border-mainColor">
               <a
                 href="#home"
                 className={`block font-semibold drop-shadow-md ${
                   activeSection === 'home'
                     ? 'text-white dark:text-superLightColor'
-                    : 'text-lightColor hover:text-superLightColor dark:text-lightColor dark:hover:text-white'
+                    : 'text-mainColor hover:text-lightColor dark:text-mainColor dark:hover:text-white'
                 }`}
               >
                 Home

@@ -18,7 +18,7 @@ export function BaseOverlay({ isOpen, onClose, children }) {
   return (
     <>
       {isOpen && (
-        <div className="fixed inset-0 z-0 flex items-start space-x-4 justify-center p-4 pt-16 transition-opacity duration-300 ease-out">
+        <div className="fixed inset-0 z-50 flex items-start space-x-2 lg:space-x-4 p-2 justify-center pt-16 mt-4 sm:mt-2 transition-all duration-300 ease-out">
           {/* Overlay Background */}
           <div
             className="absolute inset-0 bg-black bg-opacity-50 transition-opacity duration-300 z-0"
@@ -26,7 +26,8 @@ export function BaseOverlay({ isOpen, onClose, children }) {
           ></div>
 
           {/* Overlay Container */}
-          <div className="overlay-container relative bg-gray-100 dark:bg-superDarkColor rounded-lg shadow-lg max-h-[85vh] sm:max-h-[92vh] w-full sm:max-w-[96vh] md:max-w-5xl overflow-y-auto p-6 transform transition-transform duration-300 scale-95 opacity-0 fade-in-out-animation">
+          <div className="relative bg-white dark:bg-gray-800 rounded-lg shadow-lg max-h-[85vh] sm:max-h-[90vh] max-w-[90vw] sm:max-w-4xl overflow-y-auto p-6 transform transition-transform duration-300 opacity-0 fade-in-out-animation">
+
             {/* Overlay Content */}
             <div className="flex flex-col items-start">
               {children}
