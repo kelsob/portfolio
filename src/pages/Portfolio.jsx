@@ -25,13 +25,13 @@ const Portfolio = () => {
               &lt;Ben Kelso&gt;
             </h1>
             <h2 className="text-2xl mb-4 text-left transition-all duration-500 ease-in-out">
-              Junior Web Developer & Designer
+              // Junior Web Developer & Designer
             </h2>
             <p className="text-lg text-left transition-all duration-500 ease-in-out mb-6">
-            Hello! I’m a web developer who’s all about creating websites that look sharp and feel good to use, whether that is a custom React site, a simple WordPress site, or a page optimized for speed, SEO, and responsiveness. I’ve dabbled in a little bit of everything—my toolkit’s always expanding, and I’m excited to keep adding new technologies as I grow and learn.
+            /* Hello! I’m a web developer who’s all about creating websites that look sharp and feel good to use, whether that is a custom React site, a simple WordPress site, or a page optimized for speed, SEO, and responsiveness. I’ve dabbled in a little bit of everything—my toolkit’s always expanding, and I’m excited to keep adding new technologies as I grow and learn.
             </p>
             <p className="text-lg text-left transition-all duration-500 ease-in-out mb-6">
-            I’ve worked in a number of client-facing roles and believe those soft skills translate directly into any field of work, communicating clearly, understanding others, and collaborating smoothly with both colleagues and clients to make each project a success. When I'm not coding, I’m often behind a drum kit, tinkering with my Magic: The Gathering decks, or watching the Lord of the Rings trilogy for the hundredth time. I also love to dabble with board and video game design, exploring various ideas from creative, mechanical, and visual perspectives.
+            I’ve worked in a number of client-facing roles and believe those soft skills translate directly into any field of work, communicating clearly, understanding others, and collaborating smoothly with both colleagues and clients to make each project a success. When I'm not coding, I’m often behind a drum kit, tinkering with my Magic: The Gathering decks, or watching the Lord of the Rings trilogy for the hundredth time. I also love to dabble with board and video game design, exploring various ideas from creative, mechanical, and visual perspectives. */
             </p>
           </div>
         </div>

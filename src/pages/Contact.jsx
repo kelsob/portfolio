@@ -46,7 +46,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="min-h-auto flex items-center justify-center p-4">
+    <div className="min-h-auto flex flex-col items-center justify-center p-4">
       <div className="max-w-lg w-full">
         <h1 className="text-4xl font-bold mb-4 text-center transition-colors duration-300">Contact Me</h1>
         {isSent && <p className="text-center text-green-500">Message submitted. Thanks for reaching out!</p>}
@@ -101,7 +101,12 @@ const Contact = () => {
             kelsob@gmail.com
           </a>
         </div>
+
+
       </div>
+      <h1 className="w-full text-5xl mb-4 font-bold text-left transition-all duration-500 ease-in-out">
+        &lt;/Ben Kelso&gt;
+      </h1>
     </div>
   );
 };
