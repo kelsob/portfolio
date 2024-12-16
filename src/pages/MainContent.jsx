@@ -2,6 +2,7 @@ import Sidebar from '../layouts/Sidebar';
 import Tech from './Tech';
 import Portfolio from './Portfolio';
 import Contact from './Contact';
+import Experience from './Experience';
 import { MainBackgroundParticles } from '../components/particles/MainBackgroundParticles';
 
 const MainContent = () => {
@@ -13,7 +14,7 @@ const MainContent = () => {
       </div>
       
       {/* Right Content Area */}
-      <div className="w-full sm:pl-6 bg-white dark:bg-gray-700 transition-colors duration-300 mt-12 relative">
+      <div className="w-full sm:pl-6 bg-white dark:bg-gray-700 transition-colors duration-300 mt-4 sm:mt-8 lg:mt-16 relative">
         
         {/* Particles Background */}
 
@@ -28,14 +29,14 @@ const MainContent = () => {
               <Portfolio />
             </section>
 
-            <section id="tech" className="pt-16 -mt-16">
-              <Tech />
-            </section>
-
             <div className="flex w-full items-center justify-center">
               <div className="w-3/4 h-0 rounded bg-lightColor border border-superLightColor dark:bg-gray-600 my-2"></div>
             </div>
             
+            <section id="experience" className="pt-16 -mt-16">
+              <Experience />
+            </section>
+
             <section id="contact">
               <Contact />
             </section>
