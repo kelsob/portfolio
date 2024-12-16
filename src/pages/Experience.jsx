@@ -168,8 +168,8 @@ const Experience = () => {
                         <h2 className="familiarity-header text-left font-bold text-lightColor"> Design/Other Technologies</h2>
                     </div>
                     <div className="proficiency-description flex flex-col">
-                        <p className="text-left text-sm">// Technologies I have taken for a test drive through tutorials or a small project.</p>
-                        <p className="text-left text-sm mt-0 mb-2 leading-none">// I've learned the basics, but have not used them in a larger application yet.</p>
+                        <p className="text-left text-sm">// Design and video game development technologies that I'm quite familiar with.</p>
+                        <p className="text-left text-sm mt-0 mb-2 leading-none">// I've used each on a variety of hobbyist projects.</p>
                     </div>
                     <div className="space-y-1">
                         <div className="familiarity-item flex flex-row w-full items-start">
