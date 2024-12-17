@@ -1,8 +1,6 @@
 Ben's Internal To-do List!
 
 general:
- - standardize/increase font size little bit.
- - standardize font colors.
  - give more elements hover effects.
 
 portfolio pieces:
@@ -19,6 +17,3 @@ stocks project:
 - get it online.
 - better formatted time stamps for price graphs. 
 - better images that display more functionality.
-
-
-
