@@ -16,7 +16,7 @@ const Portfolio = () => {
   };
 
   return (
-    <div className="min-h-auto flex flex-col space-y-2 w-full items-center pt-8">
+    <div className="min-h-auto flex flex-col space-y-2 w-full items-center pt-16 sm:pt-12">
       <div className="w-11/12">
         <div className="flex flex-col w-full">
           {/* Introduction Section */}
