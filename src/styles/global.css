@@ -108,7 +108,13 @@ footer {
   }
 }
 
-.familiarity-section {
+.portfolio-section {
+  background: linear-gradient(to top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.4) 100%);
+  border-radius: 16px;
+  padding: 0.25rem .75rem;
+}
+
+.familiarity-section  {
   background: linear-gradient(to top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.4) 100%);
   border-radius: 16px;
   padding: 0.75rem .75rem;
@@ -129,7 +135,7 @@ footer {
   border: 2px solid #006e81;
   /* Increase the shadow subtly on hover for a "lifted" look */
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
-  scale: 1.02;
+  scale: 1.01;
 }
 
 .familiarity-item img {
@@ -199,19 +205,19 @@ footer {
 }
 
 .portfolio-card {
-  background-color: #bee9ee;
   border: 1px solid #02badb; /* Border color */
   border-radius: 0.5rem;
+  background-color:rgba(0.1, 0.1, 0.1, 0.2);
+
 }
 
 .portfolio-card p, h3 {
-  color: #006e81; /* Default text color in light mode */
 
 }
 
 .portfolio-card:hover{
-  border-color: #333;
   box-shadow: inset 0 0 0 2px #02badb, 0 4px 12px rgba(0, 0, 255, 0.15);
+  scale: 1.01;
 }
 
 .dark .portfolio-card {

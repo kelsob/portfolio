@@ -16,11 +16,11 @@ const Portfolio = () => {
   };
 
   return (
-    <div className="min-h-auto flex flex-col justify-center p-6 pt-4 mt-12 mr-8">
-      <div className="w-full mx-auto">
-        <div className="flex flex-col text-center w-full space-y-auto">
+    <div className="min-h-auto flex flex-col space-y-2 w-full items-center pt-8">
+      <div className="w-11/12">
+        <div className="flex flex-col w-full">
           {/* Introduction Section */}
-          <div className="w-full max-w-4xl mx-auto">
+          <div className="">
             <h1 className="text-5xl mb-4 font-bold text-left transition-all duration-500 ease-in-out">
               &lt;Ben Kelso&gt;
             </h1>
@@ -37,36 +37,41 @@ const Portfolio = () => {
         </div>
 
         {/* Portfolio Header */}
-        <h1 className="text-4xl font-bold mb-4 text-center transition-colors duration-300">Portfolio</h1>
+        <h1 className="text-2xl font-bold mb-4 text-center transition-colors duration-300">Portfolio</h1>
 
         {/* Web Development Projects */}
-        <h2 className="text-2xl font-semibold mb-4 text-left transition-colors duration-300">Web Development</h2>
-        <div className="portfolio-card space-y-6 transition-colors duration-300">
-          <div 
-            className="flex flex-col sm:flex-row items-center rounded-lg shadow-md p-4 transition-colors duration-300 hover:shadow-xl cursor-pointer"
-            onClick={() => openOverlay('web1')}  // Open Stocks Project Overlay
-          >
-            <img src={stockDetailsImage} alt="Simulated Stock Market" className="w-full sm:w-1/2 h-auto max-w-full object-center border-2 border-superLightColor rounded-sm sm:mr-4 mb-4 sm:mb-0 flex-shrink-0 shadow-lg" />
-            <div className="flex flex-col justify-start items-start h-full text-left">
-              <h3 className="text-md md:text-xl font-bold mb-2 transition-colors duration-300 drop-shadow-lg">Simulated Stock Market</h3>
-              <p className="text-sm md:text-lg transition-colors duration-300">This platform allows users to buy and sell fictional stocks in real-time, using virtual currency. Track your portfolio and see how the market evolves!</p>
-              <p className="text-sm md:text-md w-full italic text-right transition-colors duration-300">Click for more details.</p>
+        
+        <div className="portfolio-section mb-4">
+          <h2 className="text-xl font-semibold mb-2 text-left transition-colors duration-300">// Web Development</h2>
+          
+          <div className="portfolio-card space-y-6 transition-colors duration-300">
+            <div 
+              className="flex flex-col sm:flex-row items-center rounded-lg shadow-md p-4 transition-colors duration-300 hover:shadow-xl cursor-pointer"
+              onClick={() => openOverlay('web1')}  // Open Stocks Project Overlay
+            >
+              <img src={stockDetailsImage} alt="Simulated Stock Market" className="w-full sm:w-1/2 h-auto max-w-full object-center border-2 border-superLightColor rounded-sm sm:mr-4 mb-4 sm:mb-0 flex-shrink-0 shadow-lg" />
+              <div className="flex flex-col justify-start items-start h-full text-left">
+                <h3 className="text-md md:text-xl font-bold mb-2 transition-colors duration-300 drop-shadow-lg">Simulated Stock Market</h3>
+                <p className="text-sm md:text-lg transition-colors duration-300">This platform allows users to buy and sell fictional stocks in real-time, using virtual currency. Track your portfolio and see how the market evolves!</p>
+                <p className="text-sm md:text-md w-full italic text-right transition-colors duration-300">Click for more details.</p>
+              </div>
             </div>
           </div>
         </div>
-
         {/* Game Development Projects */}
-        <h2 className="text-2xl font-semibold mb-4 mt-12 text-left transition-colors duration-300">Game Development</h2>
-        <div className="portfolio-card space-y-6 transition-colors duration-300">
-          <div 
-            className="flex flex-col sm:flex-row items-center rounded-lg shadow-md p-4 transition-colors duration-300 hover:shadow-xl cursor-pointer"
-            onClick={() => openOverlay('game1')}  // Open Game Project 1 Overlay
-          >
-            <img src={friendFarmTitleScreen} alt="Friend Farm" className="w-full sm:w-1/2 h-auto max-w-full object-center border-2 border-superLightColor rounded-sm sm:mr-4 mb-4 sm:mb-0 flex-shrink-0 shadow-lg" />
-            <div className="flex flex-col justify-start items-start text-left">
-              <h3 className="text-md md:text-xl font-bold mb-2 transition duration-300 drop-shadow-lg">Friend Farm</h3>
-              <p className="text-sm md:text-lg transition duration-300">Friend Farm is an in-progress 2D adventure built in the Godot engine, showcasing beautiful pixel art, engaging farming mechanics, dynamic weather systems, and NPCs with complex daily routines and behaviors.</p>
-              <p className="text-sm md:text-md w-full italic text-right transition duration-300">Click for more details.</p>
+        <div className="portfolio-section">
+          <h2 className="text-xl font-semibold mb-2 text-left transition-colors duration-300">// Game Development</h2>
+          <div className="portfolio-card space-y-6 transition-colors duration-300">
+            <div 
+              className="flex flex-col sm:flex-row items-center rounded-lg shadow-md p-4 transition-colors duration-300 hover:shadow-xl cursor-pointer"
+              onClick={() => openOverlay('game1')}  // Open Game Project 1 Overlay
+            >
+              <img src={friendFarmTitleScreen} alt="Friend Farm" className="w-full sm:w-1/2 h-auto max-w-full object-center border-2 border-superLightColor rounded-sm sm:mr-4 mb-4 sm:mb-0 flex-shrink-0 shadow-lg" />
+              <div className="flex flex-col justify-start items-start text-left">
+                <h3 className="text-md md:text-xl font-bold mb-2 transition duration-300 drop-shadow-lg">Friend Farm</h3>
+                <p className="text-sm md:text-lg transition duration-300">Friend Farm is an in-progress 2D adventure built in the Godot engine, showcasing beautiful pixel art, engaging farming mechanics, dynamic weather systems, and NPCs with complex daily routines and behaviors.</p>
+                <p className="text-sm md:text-md w-full italic text-right transition duration-300">Click for more details.</p>
+              </div>
             </div>
           </div>
         </div>

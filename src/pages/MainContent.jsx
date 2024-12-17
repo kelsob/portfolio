@@ -23,7 +23,7 @@ const MainContent = () => {
 
         {/* Main Content */}
         <div className="relative z-10">
-          <div className="flex flex-col text-center w-full space-y-auto">
+          <div className="flex flex-col text-center w-full space-y-6">
 
             <section id="portfolio">
               <Portfolio />

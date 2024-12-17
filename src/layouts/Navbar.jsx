@@ -46,7 +46,7 @@ const Navbar = () => {
         </div>
 
         {/* Right Side - Dark Mode Toggle */}
-        <div className="flex items-center mr-2">
+        {/* <div className="flex items-center mr-2">
           <div
             onClick={toggleDarkMode}
             className={`w-14 h-8 flex items-center rounded-full p-1 cursor-pointer transition-colors duration-300 border-2 border-superLightColor dark:border-mainColor ${
@@ -64,7 +64,7 @@ const Navbar = () => {
               {isDarkMode ? '🌙' : '☀️'}
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </nav>
   );

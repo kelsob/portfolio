@@ -23,8 +23,8 @@ import wordpressIcon from '../../src/assets/techicons/wordpress-icon.svg';
 const Experience = () => {
     return (
         <div className="min-h-auto flex flex-col space-y-2 w-full items-center">
-            <h3>Experience</h3>
-            <p className="mx-6">/* A list of the various technologies I've worked with, organized by proficiency level. I'm currently working to improve with key technologies, while also broadening my scope and exposing myself to different frameworks and methodologies. */</p>
+            <h3 className="font-bold text-2xl">Experience</h3>
+            <p className="mx-12">/* A list of the various technologies I've worked with, organized by proficiency level. I'm currently working to improve with key technologies, while also broadening my scope and exposing myself to different frameworks and methodologies. */</p>
             <div className="flex flex-col w-full items-center space-y-4">
 
                 <div className="familiarity-section flex flex-col w-11/12">
