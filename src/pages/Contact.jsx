@@ -72,15 +72,6 @@ const Contact = () => {
             helping where I can, and learning from others, too.
           </p>
 
-          <div className="flex flex-row pt-4 transition-colors duration-300 space-x-2 w-full justify-center">
-            <p>You can also reach me at:</p>
-            <a
-              href="mailto:kelsob@gmail.com"
-              className="hover:underline transition-colors duration-300"
-            >
-              kelsob@gmail.com
-            </a>
-          </div>
         </div>
 
         {/* Right Column: Form */}
@@ -168,6 +159,24 @@ const Contact = () => {
               Send Message
             </button>
           </form>
+          <div className="flex flex-col pt-4 transition-colors duration-300 space-y-2 w-full items-center">
+            <p>You can also reach me at:</p>
+            <a
+              href="mailto:kelsob@gmail.com"
+              className="hover:underline transition-colors duration-300"
+            >
+              kelsob@gmail.com
+            </a>
+          </div>
+          <div className="flex flex-col pt-4 transition-colors duration-300 space-y-2 w-full items-center">
+            <p>or view more work at:</p>
+            <a
+              href="https://www.pixelburstdigital.com"
+              className="hover:underline transition-colors duration-300"
+            >
+              www.pixelburstdigital.com
+            </a>
+          </div>
         </div>
       </div>
     </div>
