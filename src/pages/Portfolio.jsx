@@ -28,30 +28,12 @@ const Portfolio = () => {
   };
 
   return (
-    <div className="min-h-auto flex flex-col space-y-2 w-full items-center pt-16 sm:pt-12">
-      <div className="w-11/12">
-        <div className="flex flex-col w-full">
-          {/* Introduction Section */}
-          <div className="">
-            <h1 className="text-5xl mb-4 font-bold text-left transition-all duration-500 ease-in-out">
-              &lt;Ben Kelso&gt;
-            </h1>
-            <h2 className="text-2xl mb-4 text-left transition-all duration-500 ease-in-out">
-              // Junior Web Developer & Designer
-            </h2>
-            <p className="text-lg text-left transition-all duration-500 ease-in-out mb-6">
-            /* Hello! I’m a web developer who’s all about creating websites that look sharp and feel good to use, whether that is a custom React site, a simple WordPress site, or a page optimized for speed, SEO, and responsiveness. I’ve dabbled in a little bit of everything—my toolkit’s always expanding, and I’m excited to keep adding new technologies as I grow and learn.
-            </p>
-            <p className="text-lg text-left transition-all duration-500 ease-in-out mb-6">
-            I’ve worked in a number of client-facing roles and believe those soft skills translate directly into any field of work, communicating clearly, understanding others, and collaborating smoothly with both colleagues and clients to make each project a success. When I'm not coding, I’m often behind a drum kit, tinkering with my Magic: The Gathering decks, or watching the Lord of the Rings trilogy for the hundredth time. I also love to dabble with board and video game design, exploring various ideas from creative, mechanical, and visual perspectives. */
-            </p>
-          </div>
-        </div>
-
+    <div className="min-h-auto flex flex-col justify-center p-6 pt-4 mt-12">
+      <div className="w-full max-w-4xl mx-auto">
         {/* Portfolio Header */}
-        <h1 className="text-4xl font-bold mb-8 text-center transition-colors duration-300">Portfolio</h1>
-        <p className="text-center text-sm text-gray-200 dark:text-gray-100 mb-8">
-          A selection of projects developed independently and through <a href="https://www.pixelburstdigital.com" target="_blank" rel="noopener noreferrer" className="text-blue-200 dark:text-blue-200 hover:text-blue-100 dark:hover:text-blue-100 transition-colors duration-300">Pixel Burst Digital</a>.
+        <h1 className="text-4xl font-bold mb-4 text-center transition-colors duration-300">Portfolio</h1>
+        <p className="text-center mb-8">
+          Full stack developer specializing in Laravel/TALL stack and React applications. At <a href="https://www.pixelburstdigital.com" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 transition-colors duration-300">Pixel Burst Digital</a>, I build modern web applications and transform existing sites on platforms like Wix and WordPress into high-performing, SEO-optimized experiences.
         </p>
 
         {/* Web Development Projects */}
@@ -196,4 +178,3 @@ const Portfolio = () => {
 };
 
 export default Portfolio;
-
