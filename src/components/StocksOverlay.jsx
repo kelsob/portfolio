@@ -11,77 +11,16 @@ import image4 from '../assets/stocks/StockPortfolio.png';
 export function StocksOverlay({ isOpen, onClose }) {
   return (
     <BaseOverlay isOpen={isOpen} onClose={onClose}>
-      <h2 className="text-xl font-bold">Simulated Stock Market</h2>
 
-      {/* Project Description */}
-      <p className="text-sm text-left font-bold">
-        A simulated stock market platform allowing users to trade fictional stocks in real-time:
-      </p>
-      <div className="flex w-full items-center justify-center align-center">
-        <div className="w-3/4 h-0 rounded border border-darkColor dark:bg-gray-600 my-2"></div>
-      </div>
-      <ul className="list-disc pl-6 text-left space-y-2 text-sm">
-        <li><strong>Real-time Stock Fluctuations</strong>: Fictional stocks fluctuate in real-time, creating a dynamic market environment.</li>
-        <li><strong>Portfolio Management</strong>: Users can buy, sell, and monitor their portfolios as the market evolves.</li>
-        <li><strong>User Authentication</strong>: Users can register and securely log in to manage their accounts and portfolios.</li>
-        <li><strong>Responsive Design</strong>: Optimized for both desktop and mobile devices with Tailwind CSS.</li>
-      </ul>
 
-      {/* Technologies Used */}
-      <div className="flex w-full items-center justify-center align-center">
-        <div className="w-3/4 h-0 rounded border border-darkColor dark:bg-gray-600 my-2"></div>
-      </div>
-      <h3 className="text-lg font-semibold">Technologies Used</h3><div className="flex flex-wrap justify-center items-center space-x-4 space-y-4 sm:space-y-0 sm:space-x-6 mb-4">
-      <div className="flex flex-wrap items-end space-x-4 space-y-4 sm:space-y-0 sm:space-x-6">
-      {/* PHP Logo */}
-      <div className="flex flex-col items-center justify-center flex-shrink-0">
-        <img
-          src={phpLogo}
-          alt="PHP"
-          className="w-12 h-12 sm:w-12 sm:h-12 bg-white dark:bg-gray-700 p-2 rounded border-2 border-darkColor shadow-md"
-        />
-        <span className="text-xs sm:text-sm mt-2 text-gray-900 dark:text-gray-100">PHP</span>
+      <div className="flex items-start justify-between w-full">
+        <h2 className="text-xl font-bold">Stockz</h2>
+        {/* Project Description */}
+        <p className="text-sm font-bold text-right">
+          A simulated stock market platform allowing users to trade fictional stocks in real-time:
+        </p>
       </div>
 
-      {/* Laravel Logo */}
-      <div className="flex flex-col items-center justify-center flex-shrink-0">
-        <img
-          src={laravelLogo}
-          alt="Laravel"
-          className="w-12 h-12 sm:w-12 sm:h-12 bg-white dark:bg-gray-700 p-2 rounded border-2 border-darkColor shadow-md"
-        />
-        <span className="text-xs sm:text-sm mt-2 text-gray-900 dark:text-gray-100">Laravel</span>
-      </div>
-
-      {/* Livewire Logo */}
-      <div className="flex flex-col items-center justify-center flex-shrink-0">
-        <img
-          src={livewireLogo}
-          alt="Livewire"
-          className="w-12 h-12 sm:w-12 sm:h-12 bg-white dark:bg-gray-700 p-2 rounded border-2 border-darkColor shadow-md"
-        />
-        <span className="text-xs sm:text-sm mt-2 text-gray-900 dark:text-gray-100">Livewire</span>
-      </div>
-
-      {/* Tailwind CSS Logo */}
-      <div className="flex flex-col items-center justify-center flex-shrink-0">
-        <img
-          src={tailwindLogo}
-          alt="Tailwind"
-          className="w-12 h-12 sm:w-12 sm:h-12 bg-white dark:bg-gray-700 p-2 rounded border-2 border-darkColor shadow-md"
-        />
-        <span className="text-xs sm:text-sm mt-2 text-gray-900 dark:text-gray-100">Tailwind CSS</span>
-      </div>
-    </div>
-
-
-
-    </div>
-
-
-      <div className="flex w-full items-center justify-center align-center">
-        <div className="w-3/4 h-0 rounded border border-darkColor dark:bg-gray-600 my-2"></div>
-      </div>
 
       {/* Project Images */}
       <h3 className="text-lg font-semibold mb-4">Screenshots</h3>
@@ -142,6 +81,67 @@ export function StocksOverlay({ isOpen, onClose }) {
               Admin panel for managing stock information, user accounts, and overall platform settings.
             </p>
           </div>
+        </div>
+      </div>
+
+      <div className="flex w-full items-center justify-center align-center">
+       <div className="w-3/4 h-0 rounded border border-darkColor dark:bg-gray-600 my-2"></div>
+      </div>
+      <h3 className="text-lg font-semibold mb-2">Features</h3>
+
+      <ul className="list-disc pl-6 text-left space-y-2 text-sm">
+        <li><strong>Real-time Stock Fluctuations</strong>: Fictional stocks fluctuate in real-time, creating a dynamic market environment.</li>
+        <li><strong>Portfolio Management</strong>: Users can buy, sell, and monitor their portfolios as the market evolves.</li>
+        <li><strong>User Authentication</strong>: Users can register and securely log in to manage their accounts and portfolios.</li>
+        <li><strong>Responsive Design</strong>: Optimized for both desktop and mobile devices with Tailwind CSS.</li>
+      </ul>
+
+      <div className="flex w-full items-center justify-center align-center">
+        <div className="w-3/4 h-0 rounded border border-darkColor dark:bg-gray-600 my-2"></div>
+      </div>
+
+      {/* Technologies Used */}
+
+      <h3 className="text-lg font-semibold mb-2">Technologies Used</h3>
+      <div className="flex w-full justify-center items-center space-x-6 mb-2">
+      {/* PHP Logo */}
+        <div className="flex flex-col items-center justify-center flex-shrink-0">
+          <img
+            src={phpLogo}
+            alt="PHP"
+            className="w-12 h-12 sm:w-12 sm:h-12 bg-white dark:bg-gray-700 p-2 rounded border-2 border-darkColor shadow-md"
+          />
+          <span className="text-xs sm:text-sm mt-2 text-gray-900 dark:text-gray-100">PHP</span>
+        </div>
+
+      {/* Laravel Logo */}
+        <div className="flex flex-col items-center justify-center flex-shrink-0">
+          <img
+            src={laravelLogo}
+            alt="Laravel"
+            className="w-12 h-12 sm:w-12 sm:h-12 bg-white dark:bg-gray-700 p-2 rounded border-2 border-darkColor shadow-md"
+          />
+          <span className="text-xs sm:text-sm mt-2 text-gray-900 dark:text-gray-100">Laravel</span>
+        </div>
+
+      {/* Livewire Logo */}
+        <div className="flex flex-col items-center justify-center flex-shrink-0">
+          <img
+            src={livewireLogo}
+            alt="Livewire"
+            className="w-12 h-12 sm:w-12 sm:h-12 bg-white dark:bg-gray-700 p-2 rounded border-2 border-darkColor shadow-md"
+          />
+          <span className="text-xs sm:text-sm mt-2 text-gray-900 dark:text-gray-100">Livewire</span>
+        </div>
+
+      {/* Tailwind CSS Logo */}
+        <div className="flex flex-col items-center justify-center flex-shrink-0">
+          <img
+            src={tailwindLogo}
+            alt="Tailwind"
+            className="w-12 h-12 sm:w-12 sm:h-12 bg-white dark:bg-gray-700 p-2 rounded border-2 border-darkColor shadow-md"
+          />
+          <span className="text-xs sm:text-sm mt-2 text-gray-900 dark:text-gray-100">Tailwind CSS</span>
         </div>
       </div>
     </BaseOverlay>

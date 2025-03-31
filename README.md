@@ -1,7 +1,19 @@
 Ben's Internal To-do List!
 
+general:
+ - give more elements hover effects.
 
-- Polish technologies used section, super janky when there are more than 3, for instance for the simulated stock platform.
+portfolio pieces:
+- alternate sides of text vs image.
+- accordion each individual numbered entry.
+- images/videos before technologies used sections.
+- change home page to technologies page.
+- rewrite technologies pages entries.
+- rewrite more detailed portfolio piece descriptions of each project.
 - Create a method for users to see full-images in various portoflio pieces.
-- change default frame of videos to non-black screen
-- adding the fact that friend farm is being done as a solo developer
+- change default frame of videos to non-black screen.
+
+stocks project:
+- get it online.
+- better formatted time stamps for price graphs. 
+- better images that display more functionality.

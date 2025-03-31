@@ -1,7 +1,8 @@
 import Sidebar from '../layouts/Sidebar';
-import Home from './Home';
+import Tech from './Tech';
 import Portfolio from './Portfolio';
 import Contact from './Contact';
+import Experience from './Experience';
 import { MainBackgroundParticles } from '../components/particles/MainBackgroundParticles';
 
 const MainContent = () => {
@@ -13,7 +14,7 @@ const MainContent = () => {
       </div>
       
       {/* Right Content Area */}
-      <div className="w-full sm:pl-6 bg-white dark:bg-gray-700 transition-colors duration-300 mt-12 relative">
+      <div className="w-full sm:pl-6 bg-white dark:bg-gray-700 transition-colors duration-300 mt-4 sm:mt-8 lg:mt-16 relative">
         
         {/* Particles Background */}
 
@@ -22,19 +23,20 @@ const MainContent = () => {
 
         {/* Main Content */}
         <div className="relative z-10">
-          <div className="flex flex-col text-center w-full space-y-auto">
-            <section id="home" className="pt-16 -mt-16">
-              <Home />
-            </section>
-            <div className="flex w-full items-center justify-center">
-              <div className="w-3/4 h-0 rounded bg-lightColor border border-superLightColor dark:bg-gray-600 my-2"></div>
-            </div>
+          <div className="flex flex-col text-center w-full space-y-6">
+
             <section id="portfolio">
               <Portfolio />
             </section>
+
             <div className="flex w-full items-center justify-center">
               <div className="w-3/4 h-0 rounded bg-lightColor border border-superLightColor dark:bg-gray-600 my-2"></div>
             </div>
+            
+            <section id="experience" className="pt-16 -mt-16">
+              <Experience />
+            </section>
+
             <section id="contact">
               <Contact />
             </section>

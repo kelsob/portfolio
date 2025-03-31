@@ -29,7 +29,7 @@ const Home = () => {
       </div>
 
       {/* Technologies Section */}
-      <h3 className="pb-2 text-gray-100">Experienced with:</h3>
+      <h3 className="pb-2">Experienced with:</h3>
       <div className="technology-section">
         <div className="technology-card">
           <img src={reactIcon} alt="React" />
@@ -49,6 +49,11 @@ const Home = () => {
         <div className="technology-card">
           <img src={laravelIcon} alt="PHP Laravel" />
           <span>PHP Laravel - A robust PHP framework for building modern web applications.</span>
+        </div>
+
+        <div className="technology-card">
+          <img src={bootstrapIcon} alt="Bootstrap" />
+          <span>Bootstrap - A popular CSS framework for responsive web design.</span>
         </div>
 
         <div className="technology-card">

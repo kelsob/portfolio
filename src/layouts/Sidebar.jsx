@@ -6,10 +6,10 @@ import locationIcon from '../../src/assets/techicons/location-icon-blue.svg';
 import { PolygonMaskParticles } from '../components/particles/PolygonMaskParticles';
 
 const Sidebar = () => {
-  const [activeSection, setActiveSection] = useState('home');
+  const [activeSection, setActiveSection] = useState('portfolio');
 
   const handleScroll = () => {
-    const sections = ['home', 'portfolio', 'contact'];
+    const sections = ['portfolio', 'experience', 'contact'];
     const offsets = sections.map(section => {
       const element = document.getElementById(section);
       return element ? element.offsetTop : 0;
@@ -63,20 +63,10 @@ const Sidebar = () => {
       </div>
 
       {/* Content Layer */}
-      <div className="relative z-10 flex flex-col items-end justify-start pt-20 pr-4 min-h-screen drop-shadow-lg overflow-y-auto">
+      <div className="relative z-10 flex flex-col items-end justify-start pt-16 mt-1 pr-2 min-h-screen drop-shadow-lg overflow-y-auto">
         <div className="">
-          <nav className="space-y-4 text-right rounded-lg p-4 border border-darkColor bg-superDarkColor bg-opacity-50">
+          <nav className="space-y-4 text-left rounded-lg pl-4 pt-2 pb-2 border border-darkColor bg-superDarkColor bg-opacity-50">
             <div className="relative pr-6 border-mainColor">
-              <a
-                href="#home"
-                className={`block font-semibold drop-shadow-md ${
-                  activeSection === 'home'
-                    ? 'text-white dark:text-superLightColor'
-                    : 'text-mainColor hover:text-lightColor dark:text-mainColor dark:hover:text-white'
-                }`}
-              >
-                Home
-              </a>
               <a
                 href="#portfolio"
                 className={`block font-semibold drop-shadow-md ${
@@ -86,6 +76,16 @@ const Sidebar = () => {
                 }`}
               >
                 Portfolio
+              </a>
+              <a
+                href="#experience"
+                className={`block font-semibold drop-shadow-md ${
+                  activeSection === 'tech'
+                    ? 'text-white dark:text-superLightColor'
+                    : 'text-mainColor hover:text-lightColor dark:text-mainColor dark:hover:text-white'
+                }`}
+              >
+                Experience
               </a>
               <a
                 href="#contact"
@@ -101,9 +101,9 @@ const Sidebar = () => {
               {/* The animated dot */}
               <div
                 className={`absolute -translate-x-3 right-0 h-1.5 w-1.5 bg-mainColor border-2 border-darkColor dark:bg-superLightColor rounded-full transform transition-transform duration-300 ease-in-out ${
-                  activeSection === 'home'
+                  activeSection === 'portfolio'
                     ? '-translate-y-4'
-                    : activeSection === 'portfolio'
+                    : activeSection === 'experience'
                     ? 'translate-y-2'
                     : activeSection === 'contact'
                     ? 'translate-y-8'
