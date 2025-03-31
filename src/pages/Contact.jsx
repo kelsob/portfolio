@@ -53,22 +53,22 @@ const Contact = () => {
         
         {/* Left Column: Header + Context / Reasons */}
         <div className="w-full sm:w-1/2 flex flex-col justify-start space-y-4">
-          <h1 className="text-4xl font-bold text-center w-11/12 transition-colors duration-300">
+          <h1 className="text-4xl md:text-5xl font-bold text-center w-11/12 transition-colors duration-300">
             Get in Touch
           </h1>
 
-          <p className="text-lg leading-relaxed">
+          <p className="text-lg md:text-2xl leading-relaxed">
             Want to discuss a new project, get feedback on a design idea, or just share some advice 
-            on breaking into the web dev world? I'm here for it.
+            on breaking into the web dev world? I&apos;m here for it.
           </p>
 
-          <p className="text-lg leading-relaxed">
-            Maybe you’re looking for a site that looks great and loads fast. Maybe you’ve got 
+          <p className="text-lg md:text-2xl leading-relaxed">
+            Maybe you&apos;re looking for a site that looks great and loads fast. Maybe you&apos;ve got 
             questions about improving your portfolio, or you just need someone to bounce ideas off of.
           </p>
 
-          <p className="text-lg leading-relaxed">
-            Whatever it is, don't hesitate to reach out. I’m always open to connecting, 
+          <p className="text-lg md:text-2xl leading-relaxed">
+            Whatever it is, don&apos;t hesitate to reach out. I&apos;m always open to connecting, 
             helping where I can, and learning from others, too.
           </p>
 
