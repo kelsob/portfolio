@@ -33,7 +33,7 @@ const Portfolio = () => {
         {/* Portfolio Header */}
         <h1 className="text-4xl font-bold mb-4 text-center transition-colors duration-300">Portfolio</h1>
         <p className="text-center mb-8">
-          Full stack developer specializing in Laravel/TALL stack and React applications. At <a href="https://www.pixelburstdigital.com" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 transition-colors duration-300">Pixel Burst Digital</a>, I build modern web applications and transform existing sites on platforms like Wix and WordPress into high-performing, SEO-optimized experiences.
+          Full stack developer specializing in Laravel/TALL stack and React applications. At <a href="https://www.pixelburstdigital.com" target="_blank" rel="noopener noreferrer" className="text-blue-200 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 transition-colors duration-300">Pixel Burst Digital</a>, I build modern web applications and transform existing sites on platforms like Wix and WordPress into high-performing, SEO-optimized experiences.
         </p>
 
         {/* Web Development Projects */}
